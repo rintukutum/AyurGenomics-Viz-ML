@@ -17,7 +17,7 @@ the phenotype of interest (<strong>X<sub>pheno</sub></strong>) is simple such as
 and accordingly we developed algorithms to infer genes(<strong>Y<sub>g</sub></strong>) as predictors of the phenotypes (eg., cancer).
 In recent years, we started appreciating the fact that other covariate such as
 age, sex, environmental conditions along with our phenotype of interest could
-play a vital role in regulation within cellular. Overview of phenomics and genomics data is illustrated below.
+play a vital role in regulation within cellular. Overview of phenomics and genomics data is illustrated below in Figure-01.
 
 
 <img src="https://github.com/rintukutum/AyurGenomics-Viz-ML/blob/master/images/overview.png" width="712" height="570">
