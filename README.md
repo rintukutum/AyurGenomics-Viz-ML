@@ -19,7 +19,7 @@ In recent years, we started appreciating the fact that other covariate such as
 age, sex, environmental conditions along with our phenotype of interest could
 play a vital role in regulation within cellular. Overview of phenomics and genomics data is illustrated below.
 
-[//]: <> ![Overview of phenomics & genomics data](images/overview.png)
+[//]: <> (![Overview of phenomics & genomics data](images/overview.png))
 
 <img src="https://github.com/rintukutum/AyurGenomics-Viz-ML/blob/master/images/overview.png" width="593" height="475">
  
