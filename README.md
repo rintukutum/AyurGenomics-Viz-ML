@@ -23,3 +23,16 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 <img src="https://github.com/rintukutum/AyurGenomics-Viz-ML/blob/master/images/overview.png" width="712" height="570">
  
 
+## BITS scholars interested in the project
+- [Rohit Jain](https://github.com/Rohit2706)
+- [Ishita Mediratta](https://github.com/ishitamed19)
+- [Kartik Bhatia](https://github.com/bhatiakartik10)
+- [Sri Pardha Chidella](https://github.com/Sri-Pardha)
+
+## Mentors
+- [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
+- [Dr Mitali Mukerji](https://www.igib.res.in/?q=mitalimukerji)
+
+## TA
+- [Rintu Kutum](https://github.com/rintukutum)
+
