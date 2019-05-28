@@ -37,5 +37,12 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 ## TA
 - [Rintu Kutum](https://github.com/rintukutum)
 
-## Reading Materials
-- 2017, PloS One, [Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits](https://doi.org/10.1371/journal.pone.0185380)
+## Reading
+### Now
+- 2017, PLoS One, [Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits](https://doi.org/10.1371/journal.pone.0185380)
+
+### Later
+- 2008, Journal of Translational Medicine, [Whole genome expression and biochemical correlates of extreme constitutional types defined in Ayurveda](https://doi.org/10.1186/1479-5876-6-48)
+- 2011, ACS Chemical Biology, [Ayurgenomics: A New Way of Threading Molecular Variability for Stratified Medicine](https://doi.org/10.1021/cb2003016)
+- 2016, Journal of Genetics, [Genomic insights into ayurvedic and western approaches to personalized medicine](https://www.ias.ac.in/article/fulltext/jgen/095/01/0209-0228)
+
