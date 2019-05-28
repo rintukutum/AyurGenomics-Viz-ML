@@ -7,7 +7,7 @@ Ayurgenomics visualisation and machine learning group
 - To develop machine learning algorithm for visualizing heterogenous multidimentional 
 phenomics and genomics data
 
-## Backgroud
+## Background
 Technological advancement in high-throughput experiments (HTE) allow us to decipher 
 many biological insights such as, how transcription factor interact with downstream 
 genes, with the aid of machine learning algorithms. Machine learning algorithm play a very
