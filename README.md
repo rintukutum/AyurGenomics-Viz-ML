@@ -37,3 +37,5 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 ## TA
 - [Rintu Kutum](https://github.com/rintukutum)
 
+## Reading Materials
+- 2017, PloS One, [Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits](https://doi.org/10.1371/journal.pone.0185380)
