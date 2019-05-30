@@ -49,9 +49,9 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - 2019, The lancet, [Depicting the spectrum of diseases that occur during the lifespan of an individual based on electronic health records](https://doi.org/10.1016/S2589-7500(19)30023-8)
 - 2019, Nature Scientific Report, [Genetic Predisposition Impacts Clinical Changes in a Lifestyle Coaching Program](https://www.nature.com/articles/s41598-019-43058-0)
 - 2019, Nature Medicine, [High-performance medicine: the convergence of human and artificial intelligence](https://www.nature.com/articles/s41591-018-0300-7)
-- 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](doi:10.1073/pnas.1721628115)
-- 2018, Nature Biotechnology, [Reply to "Precision medicine in the clouds"](doi:10.1038/nbt.4211)
+- 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
+- 2018, Nature Biotechnology, [Reply to "Precision medicine in the clouds"](https://www.nature.com/articles/nbt.4211)
 - 2018, Nature Biotechnology, [Precision medicine in the clouds](https://www.nature.com/articles/nbt.4210)
-- 2017, Nature Biotechnology, [A wellness study of 108 individuals using personal, dense, dynamic data clouds](doi:10.1038/nbt.3870)
+- 2017, Nature Biotechnology, [A wellness study of 108 individuals using personal, dense, dynamic data clouds](https://www.nature.com/articles/nbt.3870)
 - 2008, Journal of Translational Medicine, [Whole genome expression and biochemical correlates of extreme constitutional types defined in Ayurveda](https://doi.org/10.1186/1479-5876-6-48)
 
