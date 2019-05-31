@@ -40,17 +40,17 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 ## Reading
 ### Done
 - 2017, PLoS One, [Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits](https://doi.org/10.1371/journal.pone.0185380)
-### Now
 - 2011, ACS Chemical Biology, [Ayurgenomics: A New Way of Threading Molecular Variability for Stratified Medicine](https://doi.org/10.1021/cb2003016)
 - 2016, Journal of Genetics, [Genomic insights into ayurvedic and western approaches to personalized medicine](https://www.ias.ac.in/article/fulltext/jgen/095/01/0209-0228)
 
+### Now
+- 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
 ### Later
 - 2019, The Lancet, [A chronological map of 308 physical and mental health conditions from 4 million individuals in the English National Health Service](https://doi.org/10.1016/S2589-7500(19)30012-3)
 - 2019, The lancet, [Depicting the spectrum of diseases that occur during the lifespan of an individual based on electronic health records](https://doi.org/10.1016/S2589-7500(19)30023-8)
 - 2019, Nature Scientific Report, [Genetic Predisposition Impacts Clinical Changes in a Lifestyle Coaching Program](https://www.nature.com/articles/s41598-019-43058-0)
 - 2019, Nature Medicine, [High-performance medicine: the convergence of human and artificial intelligence](https://www.nature.com/articles/s41591-018-0300-7)
 - 2018, bioRxiv, [REVA: a rank-based multi-dimensional measure of correlation](https://doi.org/10.1101/330498)
-- 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
 - 2018, PNAS, [QnAs with Donald Geman](https://www.pnas.org/content/pnas/115/18/4528.full.pdf)
 - 2018, Nature Biotechnology, [Reply to "Precision medicine in the clouds"](https://www.nature.com/articles/nbt.4211)
 - 2018, Nature Biotechnology, [Precision medicine in the clouds](https://www.nature.com/articles/nbt.4210)
