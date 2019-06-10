@@ -44,7 +44,12 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - 2016, Journal of Genetics, [Genomic insights into ayurvedic and western approaches to personalized medicine](https://www.ias.ac.in/article/fulltext/jgen/095/01/0209-0228)
 
 ### Now
+
+- [EGLN1 involvement in high-altitude adaptation revealed through genetic analysis of extreme constitution types defined in Ayurveda]
+- Devroye L, Wise GL (1980) [Detection of abnormal behavior via nonparametric estimation of the support, SIAM J Appl Math 38:480–488]
 - 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
+
+
 ### Later
 - 2019, The Lancet, [A chronological map of 308 physical and mental health conditions from 4 million individuals in the English National Health Service](https://doi.org/10.1016/S2589-7500(19)30012-3)
 - 2019, The lancet, [Depicting the spectrum of diseases that occur during the lifespan of an individual based on electronic health records](https://doi.org/10.1016/S2589-7500(19)30023-8)
@@ -57,3 +62,5 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - 2017, Nature Biotechnology, [A wellness study of 108 individuals using personal, dense, dynamic data clouds](https://www.nature.com/articles/nbt.3870)
 - 2008, Journal of Translational Medicine, [Whole genome expression and biochemical correlates of extreme constitutional types defined in Ayurveda](https://doi.org/10.1186/1479-5876-6-48)
 
+### Exercise 
+- An Introduction to R - First 6 chapters
