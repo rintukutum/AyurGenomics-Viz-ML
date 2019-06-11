@@ -32,11 +32,12 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - [Anmol Agarwal](https://github.com/anmolagarwal04)
 
 <p float="left">
-  <figgure>
-	<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="100" />
-	<figcaption>Rohit Jain</figcaption>
-  </figure>
-  <img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="100" /> 
+  <div class="container">
+	<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
+	<div class="bottom-left">Rohit jain</div>
+  </div>
+
+  <img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="200" /> 
 </p>
 
 ## Mentors
