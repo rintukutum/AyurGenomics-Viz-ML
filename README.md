@@ -9,7 +9,14 @@ phenomics and genomics data`
 
 ## Objectives
 - To develop ML algorithm to visualize individual-level signature based on multiple phenotypes
+	- Develop algorithm to capture phenotype to phenotype relationship
+	- Develop algorithm to capture within Prakriti signatures
+	- Develop algorithm to capture between Prakriti signatures
+	- Design visual representation based on above algorithms individual-level signature
+	
 - To develop ML algorithm to associate phenotype with gene expression 
+	- Use existing methodologies to find above associations
+	- Develop novel ML algorithms to find multi-phenotype association with molecular cues.
 
 ## BITS scholars invovled in the project
 
