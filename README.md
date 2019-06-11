@@ -23,21 +23,27 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 <img src="https://github.com/rintukutum/AyurGenomics-Viz-ML/blob/master/images/overview.png" width="712" height="570">
  
 
-## BITS scholars interested in the project
-- [Rohit Jain](https://github.com/Rohit2706)
-- [Ishita Mediratta](https://github.com/ishitamed19)
-- [Kartik Bhatia](https://github.com/bhatiakartik10)
-- [Syed Ahsan Abbas](https://github.com/ahsanabbas123)
-- [Nishchit Soni](https://github.com/Nishchit1404)
-- [Anmol Agarwal](https://github.com/anmolagarwal04)
+## BITS scholars invovled in the project
 
 <p float="left">
-  <div class="container">
-	<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
-	<div class="bottom-left">Rohit jain</div>
-  </div>
-
-  <img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="200" /> 
+	<a href="https://github.com/Rohit2706">
+		<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
+	</a>
+  <a href="https://github.com/ishitamed19">
+	<img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="200" /> 
+  </a>
+  <a href="https://github.com/bhatiakartik10">
+	<img src="images/kartik.jpeg" title="Kartik Bhatia" width="200" /> 
+  </a>
+  <a href="https://github.com/ahsanabbas123">
+	<img src="images/ashan.png" title="Syed Ahsan Abbas" width="200" /> 
+  </a>
+  <a href="https://github.com/Nishchit1404">
+	<img src="images/nishchit.jpeg" title="Nishchit Soni" width="200" /> 
+  </a>
+  <a href="https://github.com/anmolagarwal04">
+	<img src="images/anmol.jpeg" title="Anmol Agarwal" width="200" /> 
+  </a>
 </p>
 
 ## Mentors
