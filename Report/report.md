@@ -323,7 +323,7 @@ Suppose we are given a reference joint probability distribution Po associated wi
 
 When presented with a new sample X, we define a binary variable by
 
-![](media/image10.png)
+![](media/image10.jpg)
 
 We will then say that the set S is divergent (for the considered sample) if
 
