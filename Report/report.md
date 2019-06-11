@@ -319,7 +319,7 @@ An omics profile is a vector![](media/image14.png). Where the index set J and th
 
 Suppose we are given a reference joint probability distribution Po associated with some baseline phenotype. Given an omics profile X and a subset S belonging to J, we will apply the definition of divergence to the random vector
 
-![](media/image15.png) Let m=|S|, so that U^S^ takes values in \[0, 1\]^m^ . We describe below how the support *U^S^*~o~ belonging to \[0, 1\]^m^ can be estimated from the data, resulting in a set .
+![](media/image15.png) Let m=|S|, so that U^S^ takes values in \[0, 1\]<sup>m</sup>. We describe below how the support *U<sup>S</sup>*~o~ belonging to \[0, 1\]<sup>m</sup> can be estimated from the data, resulting in a set .
 
 When presented with a new sample X, we define a binary variable by
 
@@ -331,13 +331,13 @@ and only if Z=1.
 
 ### SUPPORT ESTIMATION
 
-The support of the random vector ![](media/image15.png) under Po is estimated by a "covering" of the observed baseline samples. Let d be a metric on \[0, 1\]^m^ (we will use the Euclidean distance). Assume that n~o~ independent and identically distributed (i.i.d.) samples of X are observed under Po, resulting in i.i.d. Samples *U^S^*~(1)~, : : : , *U^S^*(*n*~o~); these are now n~o~ points in \[0,1\]^m^ . We will define an increasing sequence of empirical supports indexed by a "smoothing" parameter ~ᵞ~. Let *l*=*l*(~ᵞ~)=\[*n*~0~\], the greatest integer less than or equal to gamma times *n*~0~ . For each let r~k~ denote the distance between *U~S~*(*k*)and its *I*th nearest neighbour. We define
+The support of the random vector ![](media/image15.png) under Po is estimated by a "covering" of the observed baseline samples. Let d be a metric on \[0, 1\]<sup>m</sup> (we will use the Euclidean distance). Assume that n<sub>o</sub> independent and identically distributed (i.i.d.) samples of X are observed under Po, resulting in i.i.d. Samples *U<sup>S</sup>*~(1)~, : : : , *U<sup>S</sup>*(*n*<sub>o</sub>); these are now n<sub>o</sub> points in \[0,1\]<sup>m</sup> . We will define an increasing sequence of empirical supports indexed by a "smoothing" parameter ~ᵞ~. Let *l*=*l*(~ᵞ~)=\[*n*<sub>o</sub>], the greatest integer less than or equal to gamma times *n*<sub>0</sub> . For each let r<sub>k</sub> denote the distance between *U<sup>S</sup>*(*k*)and its *I*<sup>th</sup> nearest neighbour. We define
 
 ![](media/image11.jpg)(eq.2)
 
-Where *B*(*U~S~*(*k*), *r~k~*) denotes the closed ball of centre *U~S~*(*k*) and radius r~k~ In other terms, a point u belongs to \[0,1\]^m^ if and only if there exists ![](media/image16.png) such that *U~S~*(*k*) is closer to *u* than to its *I*th nearest neighbour. The smoothing parameter corresponds to the "bandwidth" in multivariate density estimation, and our estimator is based on nearest neighbour distances.
+Where *B*(*U<sub>S</sub>*(*k*), *r<sub>k</sub>*) denotes the closed ball of centre *U<sub>S</sub>*(*k*) and radius r<sub>k</sub> In other terms, a point u belongs to \[0,1\]<sup>m</sup> if and only if there exists ![](media/image16.png) such that *U<sub>S</sub>*(*k*) is closer to *u* than to its *I*<sup>th</sup> nearest neighbour. The smoothing parameter corresponds to the "bandwidth" in multivariate density estimation, and our estimator is based on nearest neighbour distances.
 
-The estimate of the support in Eq. 2 is very conservative: Every subprofile S is nondivergent for every sample from the baseline population. This is unrealistic, not only in view of possible outliers among the baseline samples but also because these baseline samples may, in fact, contain a small proportion of nonbaseline cell types. Another drawback is that is yet to be specified. We address these two issues simultaneously. Again, let *r*~1~, ....., *r~no~* be the radii of the balls centred at baseline samples. Now let r be the 95th percentile (or quantile) of these radii. Instead of covering all of the baseline samples, we remove the 5% for which before computing the support. That is, the support is constructed as in Eq. 2 but with the union over all *k*=1, ....., *n*~0~. replaced by the union over {*k* : *r~k~* ≤ r'}.
+The estimate of the support in Eq. 2 is very conservative: Every subprofile S is nondivergent for every sample from the baseline population. This is unrealistic, not only in view of possible outliers among the baseline samples but also because these baseline samples may, in fact, contain a small proportion of nonbaseline cell types. Another drawback is that is yet to be specified. We address these two issues simultaneously. Again, let *r*<sub>1</sub>, ....., *r<sub>no</sub>* be the radii of the balls centred at baseline samples. Now let r be the 95th percentile (or quantile) of these radii. Instead of covering all of the baseline samples, we remove the 5% for which before computing the support. That is, the support is constructed as in Eq. 2 but with the union over all *k*=1, ....., *n*<sub>0</sub>. replaced by the union over {*k* : *r<sub>k</sub>* ≤ r'}.
 
 An example of the estimated support for two genes (\|*S*\|=2) and Y=0.1 is shown in the figure below.![](media/image12.jpg)
 
