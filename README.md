@@ -8,7 +8,7 @@ Ayurgenomics visualisation and machine learning group
 phenomics and genomics data`
 
 ## Objectives
-- To develop ML algorithm to visualize individual signature based on multiple phenotypes
+- To develop ML algorithm to visualize individual-level signature based on multiple phenotypes
 - To develop ML algorithm to associate phenotype with gene expression 
 
 ## BITS scholars invovled in the project
