@@ -36,7 +36,7 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 	<img src="images/kartik.jpeg" title="Kartik Bhatia" width="200" /> 
   </a>
   <a href="https://github.com/ahsanabbas123">
-	<img src="images/ashan.png" title="Syed Ahsan Abbas" width="200" /> 
+	<img src="images/ahsan.png" title="Syed Ahsan Abbas" width="200" /> 
   </a>
   <a href="https://github.com/Nishchit1404">
 	<img src="images/nishchit.jpeg" title="Nishchit Soni" width="200" /> 
