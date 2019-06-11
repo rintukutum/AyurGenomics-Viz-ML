@@ -27,8 +27,8 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - [Rohit Jain](https://github.com/Rohit2706)
 - [Ishita Mediratta](https://github.com/ishitamed19)
 - [Kartik Bhatia](https://github.com/bhatiakartik10)
-- [][Syed Ahsan Abbas](https://github.com/ahsanabbas123)
-- [Nishchit Soni]
+- [Syed Ahsan Abbas](https://github.com/ahsanabbas123)
+- [Nishchit Soni](https://github.com/Nishchit1404)
 - [Anmol Agarwal](https://github.com/anmolagarwal04)
 ## Mentors
 - [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
@@ -44,7 +44,7 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - 2016, Journal of Genetics, [Genomic insights into ayurvedic and western approaches to personalized medicine](https://www.ias.ac.in/article/fulltext/jgen/095/01/0209-0228)
 
 ### Now
-
+- Hunter K. John, UC Davis [Measure Theory Notes](https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf)
 - [EGLN1 involvement in high-altitude adaptation revealed through genetic analysis of extreme constitution types defined in Ayurveda]
 - Devroye L, Wise GL (1980) [Detection of abnormal behavior via nonparametric estimation of the support, SIAM J Appl Math 38:480–488]
 - 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
