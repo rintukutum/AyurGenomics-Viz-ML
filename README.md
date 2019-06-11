@@ -29,6 +29,12 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - [Syed Ahsan Abbas](https://github.com/ahsanabbas123)
 - [Nishchit Soni](https://github.com/Nishchit1404)
 - [Anmol Agarwal](https://github.com/anmolagarwal04)
+
+<p float="left">
+  <img src="images/rohit-jain.jpeg" width="100" />
+  <img src="images/ishita-mediratta.jpeg" width="100" /> 
+</p>
+
 ## Mentors
 - [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
 - [Dr Mitali Mukerji](https://www.igib.res.in/?q=mitalimukerji)
