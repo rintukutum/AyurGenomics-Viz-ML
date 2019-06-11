@@ -183,8 +183,7 @@ To optimally extract useful knowledge contained within Ayurveda, it is important
 
 # <u><center>AYURVEDA</center></u>
 
-**INTRODUCTION** 
-===============
+### INTRODUCTION
 
 **Ayurveda** is a system of medicine with historical roots in the [Indian subcontinent](https://en.wikipedia.org/wiki/Indian_subcontinent). Globalized and modernized practices derived from Ayurveda traditions are a type of [alternative medicine](https://en.wikipedia.org/wiki/Alternative_medicine). In countries beyond India, Ayurvedic therapies and practices have been integrated in general [wellness](https://en.wikipedia.org/wiki/Wellness_(alternative_medicine)) applications and in some cases in medical use.
 
