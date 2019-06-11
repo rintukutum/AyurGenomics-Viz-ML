@@ -612,11 +612,20 @@ provides a better accuracy with lesser outliers.
 
 ### DIVERGENCE
 
-Let U be a random variable assuming values in space *U* and let Po be a reference or baseline distribution on *U* with support *supp*(*P*o) belonging to *U*. Then a value of u belongs to *U* is divergent if *u does not belong to* *supp*(*P*o). Divergence, by definition, is a sample property.
+Let U be a random variable assuming values in space *U* and let Po be a 
+reference or baseline distribution on *U* with support *supp*(*P*o) 
+belonging to *U*. Then a value of u belongs to *U* is divergent if 
+*u does not belong to* *supp*(*P*o). Divergence, by definition, is a 
+sample property.
 
-An omics profile is a vector![](media/image14.png). Where the index set J and the values assumed by individual features, Xj depends on the particular data modality determined by the measurement technology.
+An omics profile is a vector![](media/image14.png). Where the index set 
+J and the values assumed by individual features, Xj depends on the 
+particular data modality determined by the measurement technology.
 
-Suppose we are given a reference joint probability distribution Po associated with some baseline phenotype. Given an omics profile X and a subset S belonging to J, we will apply the definition of divergence to the random vector
+Suppose we are given a reference joint probability distribution Po 
+associated with some baseline phenotype. Given an omics profile X and 
+a subset S belonging to J, we will apply the definition of divergence 
+to the random vector
 
 ![](media/image15.png) Let m=|S|, so that U<sup>S</sup> takes values in \[0, 1\]<sup>m</sup>. We describe below how the support *U<sup>S</sup>*~o~ belonging to \[0, 1\]<sup>m</sup> can be estimated from the data, resulting in a set .
 
