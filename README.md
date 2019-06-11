@@ -2,10 +2,52 @@
 Ayurgenomics visualisation and machine learning group
 
 
-## Proposal
+## Proposed title
 
-- To develop machine learning algorithm for visualizing heterogenous multidimentional 
-phenomics and genomics data
+`To develop machine learning algorithm for visualizing heterogenous multidimentional 
+phenomics and genomics data`
+
+## Objectives
+- To develop ML algorithm to visualize individual-level signature based on multiple phenotypes
+	- Develop algorithm to capture phenotype to phenotype relationship
+	- Develop algorithm to capture within Prakriti signatures
+	- Develop algorithm to capture between Prakriti signatures
+	- Design visual representation of individual-level signature based on above algorithms 
+	
+- To develop ML algorithm to associate phenotype with gene expression 
+	- Use existing methodologies to find above associations
+	- Develop novel ML algorithms to find multi-phenotype association with molecular cues.
+
+## BITS scholars invovled in the project
+
+<p float="left">
+	<a href="https://github.com/Rohit2706">
+		<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
+	</a>
+  <a href="https://github.com/ishitamed19">
+	<img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="200" /> 
+  </a>
+  <a href="https://github.com/bhatiakartik10">
+	<img src="images/kartik.jpeg" title="Kartik Bhatia" width="200" /> 
+  </a>
+  <a href="https://github.com/ahsanabbas123">
+	<img src="images/ahsan.png" title="Syed Ahsan Abbas" width="200" /> 
+  </a>
+  <a href="https://github.com/Nishchit1404">
+	<img src="images/nishchit.jpeg" title="Nishchit Soni" width="200" /> 
+  </a>
+  <a href="https://github.com/anmolagarwal04">
+	<img src="images/anmol.jpeg" title="Anmol Agarwal" width="200" /> 
+  </a>
+</p>
+
+## Mentors
+- [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
+- [Dr Mitali Mukerji](https://www.igib.res.in/?q=mitalimukerji)
+
+## TA
+- [Rintu Kutum](https://github.com/rintukutum)
+
 
 ## Background
 Technological advancement in high-throughput experiments (HTE) allow us to decipher 
@@ -23,19 +65,6 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 <img src="https://github.com/rintukutum/AyurGenomics-Viz-ML/blob/master/images/overview.png" width="712" height="570">
  
 
-## BITS scholars interested in the project
-- [Rohit Jain](https://github.com/Rohit2706)
-- [Ishita Mediratta](https://github.com/ishitamed19)
-- [Kartik Bhatia](https://github.com/bhatiakartik10)
-- [Syed Ahsan Abbas](https://github.com/ahsanabbas123)
-- [Nishchit Soni](https://github.com/Nishchit1404)
-- [Anmol Agarwal](https://github.com/anmolagarwal04)
-## Mentors
-- [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
-- [Dr Mitali Mukerji](https://www.igib.res.in/?q=mitalimukerji)
-
-## TA
-- [Rintu Kutum](https://github.com/rintukutum)
 
 ## Reading
 ### Done
