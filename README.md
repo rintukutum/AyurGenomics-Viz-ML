@@ -12,7 +12,7 @@ phenomics and genomics data`
 	- Develop algorithm to capture phenotype to phenotype relationship
 	- Develop algorithm to capture within Prakriti signatures
 	- Develop algorithm to capture between Prakriti signatures
-	- Design visual representation based on above algorithms individual-level signature
+	- Design visual representation of individual-level signature based on above algorithms 
 	
 - To develop ML algorithm to associate phenotype with gene expression 
 	- Use existing methodologies to find above associations
