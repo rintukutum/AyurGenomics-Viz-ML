@@ -24,15 +24,16 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
  
 
 ## BITS scholars interested in the project
-![](images/rohit-jain.jpeg)[Rohit Jain](https://github.com/Rohit2706) ![](images/ishita-mediratta.jpeg)[Ishita Mediratta](https://github.com/ishitamed19)
+- [Rohit Jain](https://github.com/Rohit2706)
+- [Ishita Mediratta](https://github.com/ishitamed19)
 - [Kartik Bhatia](https://github.com/bhatiakartik10)
 - [Syed Ahsan Abbas](https://github.com/ahsanabbas123)
 - [Nishchit Soni](https://github.com/Nishchit1404)
 - [Anmol Agarwal](https://github.com/anmolagarwal04)
 
 <p float="left">
-  <img src="images/rohit-jain.jpeg" width="100" />
-  <img src="images/ishita-mediratta.jpeg" width="100" /> 
+  <img src="images/rohit-jain.jpeg" title="Rohit Jain" width="100" />
+  <img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="100" /> 
 </p>
 
 ## Mentors
