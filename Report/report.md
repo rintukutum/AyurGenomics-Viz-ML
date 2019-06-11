@@ -114,15 +114,13 @@ CSIR-Institute of Genomics & Integrative Biology (IGIB) is a premier Institute o
 
 IGIB was established in 1977 as the Centre for Biochemical Technology (CBT). The Functional Genomics Unit was established in 1998 with the focus shifting from chemical to genomics research. The institute was renamed \"Institute of Genomics and Integrative Biology\" in 2002.
 
-**ACHIEVEMENTS** 
-==============================
+## ACHIEVEMENTS
 
 In 2009, a team at the Institute sequenced the genome of the wild-type Zebrafish, with about 1.7 billion base pairs. This made the fish, which is native to the Himalayan region, the first vertebrate to have its whole genome sequenced in India, as previously Indian scientists had only sequenced bacteria and plant genomes.
 
 In December 2009, scientists at IGIB performed the first re-sequencing of a human genome in India. The Institute also collaborated on decoding the first Sri Lankan genome and Malaysian genome.
 
-**RESEARCH AREAS** 
-================================
+## RESEARCH AREAS
 
 ### I. Genomics and Molecular Medicine 
 
