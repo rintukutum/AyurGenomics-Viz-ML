@@ -28,7 +28,7 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - [Ishita Mediratta](https://github.com/ishitamed19)
 - [Kartik Bhatia](https://github.com/bhatiakartik10)
 - [Syed Ahsan Abbas](https://github.com/ahsanabbas123)
-- [Nishchit Soni]
+- [Nishchit Soni](https://github.com/Nishchit1404)
 - [Anmol Agarwal](https://github.com/anmolagarwal04)
 ## Mentors
 - [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
