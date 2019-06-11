@@ -1,4 +1,4 @@
-<center>
+<p align="center">
 
 A REPORT
 
@@ -12,33 +12,34 @@ UNDERTAKEN AT
 
 A PRACTISE SCHOOL-I STATION OF
 
-![Image result for BITS](media/image1.jpg){width="2.3183311461067366in" height="2.3183311461067366in"}
+![Image result for BITS](media/image1.jpg)
 
 **BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE, PILANI**
 
 **JULY, 2019**
 
-</center>
+</p>
 
 <br><br><hr color='black' size=5><br><br>
 
 **GROUP MEMBERS**
 
-ISHITA MEDIRATTA 2017A7PS1013G
+ISHITA MEDIRATTA (2017A7PS1013G)
 
-ANMOL AGARWAL 2017B3A70489G
+ANMOL AGARWAL (2017B3A70489G)
 
-KARTIK BHATIA 2017A7PS0051G
+KARTIK BHATIA (2017A7PS0051G)
 
-SYED AHSAN ABBAS 2017B3A70507P
+SYED AHSAN ABBAS (2017B3A70507P)
 
-ROHIT JAIN 2017A7PS0122P
+ROHIT JAIN (2017A7PS0122P)
 
-NISHCHIT SONI 2017B3A71035P
+NISHCHIT SONI (2017B3A71035P)
 
 <br><br><hr color='black' size=5><br><br>
 
-**BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE PILANI (RAJASTHAN)\ Practice School Division**
+### BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE PILANI (RAJASTHAN)
+### Practice School Division
 
 **Station(s):** New Delhi **Centre:** CSIR-IGIB, Mathura Road
 
@@ -83,36 +84,33 @@ We express our gratitude towards Dr Deepak Chitkara, our PS-I faculty for his gu
 i. Abstract ii. Acknowledgement 
 
 <!-- -->
-
-1. Knowing The Organization
-
- a. Mission
-
- b. Achievements
-
- c. Research Areas
-
-2. Introduction
-
-3. Ayurveda
-
-4. Ayurgenomics
-
-5. Research Paper Discussion
-
- d. Plos One: Recapitulation Of Ayurveda Constitution Types By Machine Learning Of Phenotypic Traits e. Divergence Model For Classification
-
-6. Citations
+<ol>
+ <li> Knowing The Organization </li>
+ <ul>
+  <li> Mission </li>
+  <li> Achievements </li>
+  <li> Research Areas </li>
+ </ul>
+ <li> Introduction </li>
+ <li> Ayurveda </li>
+ <li> Ayurgenomics </li>
+ <li> Research Paper Discussion </li>
+ <ul>
+  <li> Plos One: Recapitulation Of Ayurveda Constitution Types By Machine Learning Of Phenotypic Traits </li>
+  <li> Divergence Model For Classification </li>
+ </ul>
+<li> Citations </li> 
+</ol>
 
 <br><br><hr color='black' size=5><br><br>
 
 # <u><center>KNOWING THE ORGANIZATION</center></u>
 
-![](media/image2.png){width="2.638888888888889in" height="1.93125in"}
+![IGIB](media/image2.jpg)
 
 CSIR-Institute of Genomics & Integrative Biology (IGIB) is a premier Institute of Council of Scientific and Industrial Research (CSIR), engaged in research of national importance in the areas of genomics, molecular medicine, bioinformatics and proteomics.
 
-**<i>MISSION</i>**- <font color="red"> *"To translate concepts developed in basic biological research to commercially viable technologies for health care"* </font><br> 
+> **<i>MISSION</i>**- <font color="red"> *"To translate concepts developed in basic biological research to commercially viable technologies for health care"* </font><br> 
 
 IGIB was established in 1977 as the Centre for Biochemical Technology (CBT). The Functional Genomics Unit was established in 1998 with the focus shifting from chemical to genomics research. The institute was renamed \"Institute of Genomics and Integrative Biology\" in 2002.
 
@@ -126,35 +124,46 @@ In December 2009, scientists at IGIB performed the first re-sequencing of a huma
 **RESEARCH AREAS** 
 ================================
 
-**I. Genomics and Molecular Medicine **
+### I. Genomics and Molecular Medicine 
 
 Genomics and Molecular Medicine is the major research focus of IGIB. From large collaborative projects like the Indian Genome Variation Consortium project to exploring the genetics of complex disorders using a candidate gene approach several groups at IGIB are involved in studying the molecular basis of human diseases.
 
 They focus on:
 
-\* Neuropsychiatric disorders like Schizophrenia \* Diabetes and other complex disorders.
+* Neuropsychiatric disorders like Schizophrenia 
+* Diabetes and other complex disorders.
 
-**II.Cardio-Respiratory Disease Biology**
+### II.Cardio-Respiratory Disease Biology 
 
 A significant number of IGIB scientists focus on respiratory diseases using clinical, genetic, molecular and drug development approaches to tackle this challenging area.
 
 The diseases of interest here are:
 
-\* M. Tuberculosis \* Asthma and Allergy \* Chronic Obstructive Pulmonary Disorder (COPD)
+* M. Tuberculosis 
+* Asthma and Allergy 
+* Chronic Obstructive Pulmonary Disorder (COPD)
 
-**III. Chemical and Systems Biology**
+### III. Chemical and Systems Biology 
 
 Chemical approaches are essential in the understanding of many biological phenomena. Several research groups at IGIB have come together to utilize their varied expertise in different disciplines of chemistry and biology to address contemporary research problems that require interdisciplinary cross-talk. Research carried out at IGIB in this area involves:
 
-\* Chemical biology and systems biology of M. tuberculosis and skin pigmentation \* chemically modified oligonucleotides for biological applications \* Nano biotechnology \* Novel immunoassay procedures \* New molecules
+* Chemical biology and systems biology of M. tuberculosis and skin pigmentation 
+* chemically modified oligonucleotides for biological applications 
+* Nano biotechnology 
+* Novel immunoassay procedures 
+* New molecules
 
-**IV. Informatics and Big Data **
+### IV. Informatics and Big Data
 
 IGIB has over the years built up expertise in high-throughput data analysis and genome annotation. It is participating in international efforts like the Gen2Phen Consortium for unifying genetic variation databases. Genome Informatics also forms an integral part of most other research areas at IGIB and contributes to the development of tools and hypotheses. The areas where informatics has contributed to genome analysis include:
 
-\* Indian Genome Variation: analysis of genome variation data \* Next-gen sequencing, assembly and annotation \* Unfolded proteins and adhesins \* Prediction of microRNA-target interaction \* Structural regulatory motifs in the genome
+* Indian Genome Variation: analysis of genome variation data 
+* Next-gen sequencing, assembly and annotation 
+* Unfolded proteins and adhesins 
+* Prediction of microRNA-target interaction 
+* Structural regulatory motifs in the genome
 
-**V. Integrative and Functional Genomics**
+### V. Integrative and Functional Genomics 
 
 Functional & Integrative Genomics is devoted to large-scale studies of genomes and their functions, including systems analyses of biological processes.
 
@@ -164,7 +173,7 @@ Functional & Integrative Genomics is devoted to large-scale studies of genomes a
 
 In today's time, there has been an ever-increasing need on the endo-phenotyping and omics studies for stratifying groups on the basis of differences in susceptibility, prognosis and therapeutics towards diseases, which is the underlying basis for the P4 medicine. While there have been a lot of methods developed in modern times, India already has a 5000-years old study of Ayurveda. In the Ayurveda system of medicine, individuals are classified into 7 constitution types, "Prakriti", for assessing disease susceptibility and drug responsiveness. Prakriti evaluation involves clinical examination including questions about physiological and behavioural traits. V, P and K are referred to as extreme (distinct) Prakriti while other four Prakriti types VP, PK, VK and VPK are referred here as non-extreme Prakriti.
 
-**Whole genome expression and molecular correlates between Ayurveda and Modern Medicine**
+#### Whole genome expression and molecular correlates between Ayurveda and Modern Medicine
 
 It is well acknowledged that subtle variations in large number of genes and their interactions can give rise to system-wide changes which confer differential predisposition to diseases. These variations are common and contribute to 95% of the inter-individual differences observed both at the expression and genetic level in a population. The differences between subsets of individuals from a homogeneous population which are at the phenotypic endpoints of normal health spectrum were identified using method of classification described in Ayurveda. The extreme constitution types reveal differences at the gene expression level as well as biochemical levels and also included genes with reported disease involvement. Interestingly, they also reveal differences in a significant number of hub and housekeeping genes which if perturbed can have system-wide effects.
 
@@ -189,12 +198,11 @@ Ayurveda names seven basic tissues ([dhatu](https://en.wikipedia.org/wiki/Dhatu_
 
 <br><br><hr color='black' size=5><br><br>
 
-# <u><center>AYURGENOMICS</center></u>
+# AYURGENOMICS
 
-**INTRODUCTION** 
-===============
+### INTRODUCTION
 
-![](media/image3.png){width="6.763888888888889in" height="5.067361111111111in"}
+![](media/image3.jpg)
 
 In Ayurveda texts, though the principles of phenotypes in health and disease states are extremely well described, they are not readily decipherable and hence its potential has not been appreciated by modern genomic researchers. According to Ayurveda individual's basic constitution (Prakriti) describes its predisposition and prognosis to disease status and also the treatment for disease and lifestyle regime. In Genomics, an individual's basic constitution is decided by its genetic makeup which indirectly reflects the levels of various biochemical parameters in an individual which states its Health status. The authors aimed at the establishment of a high correlation of Prakriti with genomic signatures by isolating DNA, RNA and Plasma from the blood sample.
 
@@ -208,14 +216,14 @@ The concepts and practice of Ayurveda resonate with the aims, observations and t
 
 In Ayurveda system of medicine individuals are classified into seven constitution types, "*Prakriti*", for assessing disease susceptibility and drug responsiveness. *Prakriti* evaluation involves clinical examination including questions about physiological and behavioural traits. In the present era of phenomics, there has been an increase in emphasis on endo-phenotyping along with omics approaches for identification of groups that differ in susceptibility, prognosis and therapeutic requirements. There is an unmet need for the development of adequate phenotyping methods for stratification of healthy individuals at a systemic level. Phenotypic stratification of healthy individuals forms the primary basis for predictive and personalised medicine in Ayurveda.
 
-![](media/image4.png){width="6.5625in" height="6.057292213473316in"}
+![](media/image4.jpg)
 
 A study has revealed molecular differences between the extreme *Prakriti* types. Assuming that the *Prakriti* types correspond to objectively identifiable sub-phenotypes, they should form clusters within a multidimensional space where the axes conform to the phenotypic traits used for clinical stratification To optimally extract useful knowledge contained within Ayurveda, it is important to develop a modern framework *Prakriti* assessment involves examination of more than 150 features with anatomical and physical activity related attributes that can be directly examined and physiological and psychological parameters inferred based on the responses of the individual and past history.
 
-![](media/image5.png){width="5.786458880139983in" height="4.235895669291339in"}
+![](media/image5.jpg)
 
-**Ayurgenomics: A New Way of Threading Molecular Variability for Stratified Medicine**
-====
+### Ayurgenomics: A New Way of Threading Molecular Variability for Stratified Medicine
+
 
 To explore the molecular basis of three most different Prakriti types, predominantly V, P, and K a questionnaire was designed that could capture the clinical features described in Ayurvedic literature for phenotyping of Prakriti in an objective manner. To minimise the effect of confounding factors on the expression of Prakriti, we conducted our study on age- and sex-matched subjects from a genetically homogeneous Indo-European (IE) background. The homogeneity of the V, P, and K subjects and relatedness with the background population was confirmed through phylogenetic analysis using a set of unlinked markers studied in the Indian Genome Variation Consortium project. individuals who have a predominance of V, P, or K in their Prakriti exhibit differences in
 
@@ -241,15 +249,14 @@ Most importantly, once the genotypes of all the constitution types were pooled, 
 
 <br><br><hr color='black' size=5><br><br>
 
-<center>
-**PLOS ONE: Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits** 
-================ 
-</center>
-**INTRODUCTION**
+
+# PLOS ONE: Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits
+
+### INTRODUCTION
 
 A need was felt to develop models for accurately predicting Prakriti classes that have been shown to exhibit molecular differences. The present study was carried out on data of phenotypic attributes in 147 healthy individuals of three extreme Prakriti types, from a genetically homogeneous population of Western India. Unsupervised and supervised machine learning approaches were used to infer the inherent structure of the data, and for feature selection and building classification models for Prakriti respectively. This study was the first to demonstrate that Prakriti types are distinct verifiable clusters within a multidimensional space of multiple interrelated phenotypic traits. It also provides a computational framework for predicting Prakriti classes from phenotypic attributes. This approach may be useful in precision medicine for stratification of endophenotypes in healthy and diseased populations.
 
-**METHODS**
+### METHODS
 
 1. Recruitment of subjects and clinical assessment of Prakriti - Detailed Prakriti evaluation was carried out in 528 individuals by Ayurveda physicians using a questionnaire and subjects assigned into one of the seven subtypes.
 
@@ -269,7 +276,7 @@ A need was felt to develop models for accurately predicting Prakriti classes tha
 
 6. Validation of models on an external dataset from a different population - The models were validated in a dataset of an earlier study from the North Indian population.
 
-**RESULTS**
+### RESULTS
 
 1. Genotyping analysis confirmed the genetic homogeneity of the study Population - Vadu cohort belongs to an Indo-European background from Western India. The genetic homogeneity of the cohort was confirmed using a panel of markers from Indian Genome.
 
@@ -277,7 +284,7 @@ A need was felt to develop models for accurately predicting Prakriti classes tha
 
 3. The emergence of three distinct robust clusters through unsupervised learning of questionnaire data from extreme Prakriti.
 
-![](media/image6.png){width="4.588542213473316in" height="2.549189632545932in"}
+![](media/image6.jpg)
 
 4. Three distinct supervised learning approaches provide a core set of variables that accurately predict Prakriti - Through feature selection methods, identified a minimal set of features from the 133 attributes that could most accurately identify the extreme groups from a heterogeneous population.
 
@@ -285,72 +292,61 @@ A need was felt to develop models for accurately predicting Prakriti classes tha
 
 6. Development of a classifier for identification of extreme Prakriti groups from heterogeneous populations - It was tested whether extreme or non-extreme Prakriti with equal accuracy. Using the above model, probability distributions of Prakriti-membership scores upon non-extreme data did not show a preferential skew towards any of the labels.
 
-![](media/image7.png){width="4.645833333333333in" height="1.8652777777777778in"}
+![](media/image7.jpg)
 
 <br><br><hr color='black' size=5>
 
-<center>**DIVERGENCE MODEL FOR CLASSIFICATION** </center>
-=====================================
+# DIVERGENCE MODEL FOR CLASSIFICATION
 
-**QUANTILES AND QUANTILE NORMALIZATION**
+### QUANTILES AND QUANTILE NORMALIZATION
 
 Quantile is a line that divides a sample distribution into equal subgroups. By definition, the median of a sample is a 50% or a 0.5 quantile.
 
-![](media/image8.png){width="3.6041666666666665in" height="3.369792213473316in"}
+![](media/image8.jpg)
 
 Each individual omic profile can be transformed into quantile space by replacing each element of the profile is replaced by its normalized rank with respect to the other elements in the same profile.
 
 Define
 
-![](media/image9.png){width="2.6875in" height="0.6145833333333334in"}
+![](media/image9.jpg)
 
 This is called as Quantile Normalization.
 
 This definition of quantiles is sample-based (i.e., they are computed across variables measured for a single subject), not population or cohort-based. In genomics, it is very difficult to find the desired samples and hence, a sample based model provides a better accuracy with lesser outliers.
 
-**DIVERGENCE**
+### DIVERGENCE
 
 Let U be a random variable assuming values in space *U* and let Po be a reference or baseline distribution on *U* with support *supp*(*P*o) belonging to *U*. Then a value of u belongs to *U* is divergent if *u does not belong to* *supp*(*P*o). Divergence, by definition, is a sample property.
 
-An omics profile is a vector![](media/image10.png){width="0.96875in" height="0.14583333333333334in"}. Where the index set J and the values assumed by individual features, Xj depends on the particular data modality determined by the measurement technology.
+An omics profile is a vector![](media/image14.png). Where the index set J and the values assumed by individual features, Xj depends on the particular data modality determined by the measurement technology.
 
-![](media/image11.png){width="2.25in" height="0.20833333333333334in"}Suppose we are given a reference joint probability distribution Po associated with some baseline phenotype. Given an omics profile X and a subset S belonging to J, we will apply the definition of divergence to the random vector
+Suppose we are given a reference joint probability distribution Po associated with some baseline phenotype. Given an omics profile X and a subset S belonging to J, we will apply the definition of divergence to the random vector
 
-![](media/image12.png){width="0.225in" height="0.275in"}Let m= \|S\|, so that U^S^ takes values in \[0, 1\]^m^ . We describe below how the support *U^S^*~o~ belonging to \[0, 1\]^m^ can be estimated from the data, resulting in a set .
+![](media/image15.png) Let m=|S|, so that U^S^ takes values in \[0, 1\]^m^ . We describe below how the support *U^S^*~o~ belonging to \[0, 1\]^m^ can be estimated from the data, resulting in a set .
 
 When presented with a new sample X, we define a binary variable by
 
-![](media/image13.png){width="2.6875in" height="0.6979166666666666in"}
+![](media/image10.png)
 
 We will then say that the set S is divergent (for the considered sample) if
 
-and only if Z =1.
+and only if Z=1.
 
-**SUPPORT ESTIMATION**
+### SUPPORT ESTIMATION
 
-![](media/image14.png){width="1.1347222222222222in" height="0.225in"}![](media/image11.png){width="1.9122965879265093in" height="0.23958333333333334in"}The support of the random vector under Po is estimated by a "covering" of the observed baseline samples. Let d be a metric on \[0, 1\]^m^ (we will use the Euclidean distance). Assume that n~o~ independent and identically distributed (i.i.d.) samples of X are observed under Po, resulting in i.i.d. Samples *U^S^*~(1)~, : : : , *U^S^*(*n*~o~); these are now n~o~ points in \[0,1\]^m^ . We will define an increasing sequence of empirical supports indexed by a "smoothing" parameter ~ᵞ~. Let *l*=*l*(~ᵞ~)=\[*n*~0~\], the greatest integer less than or equal to gamma times *n*~0~ . For each let r~k~ denote the distance between *U~S~*(*k*)and its *I*th nearest neighbour. We define
+The support of the random vector ![](media/image15.png) under Po is estimated by a "covering" of the observed baseline samples. Let d be a metric on \[0, 1\]^m^ (we will use the Euclidean distance). Assume that n~o~ independent and identically distributed (i.i.d.) samples of X are observed under Po, resulting in i.i.d. Samples *U^S^*~(1)~, : : : , *U^S^*(*n*~o~); these are now n~o~ points in \[0,1\]^m^ . We will define an increasing sequence of empirical supports indexed by a "smoothing" parameter ~ᵞ~. Let *l*=*l*(~ᵞ~)=\[*n*~0~\], the greatest integer less than or equal to gamma times *n*~0~ . For each let r~k~ denote the distance between *U~S~*(*k*)and its *I*th nearest neighbour. We define
 
-![](media/image15.png){width="3.0172419072615924in" height="0.78125in"} (eq.2)
+![](media/image11.jpg)(eq.2)
 
-![](media/image14.png){width="1.1347222222222222in" height="0.225in"}Where *B*(*U~S~*(*k*), *r~k~*) denotes the closed ball of centre *U~S~*(*k*) and radius r~k~ In other terms, a point u belongs to \[0,1\]^m^ if and only if there exists such that *U~S~*(*k*) is closer to *u* than to its *I*th nearest neighbour. The smoothing parameter corresponds to the "bandwidth" in multivariate density estimation, and our estimator is based on nearest neighbour distances.
+Where *B*(*U~S~*(*k*), *r~k~*) denotes the closed ball of centre *U~S~*(*k*) and radius r~k~ In other terms, a point u belongs to \[0,1\]^m^ if and only if there exists ![](media/image16.png) such that *U~S~*(*k*) is closer to *u* than to its *I*th nearest neighbour. The smoothing parameter corresponds to the "bandwidth" in multivariate density estimation, and our estimator is based on nearest neighbour distances.
 
-![](media/image16.png){width="0.4666666666666667in" height="0.20555555555555555in"}The estimate of the support in Eq. 2 is very conservative: Every subprofile S is nondivergent for every sample from the baseline population. This is unrealistic, not only in view of possible outliers among the baseline samples but also because these baseline samples may, in fact, contain a small proportion of nonbaseline cell types. Another drawback is that is yet to be specified. We address these two issues simultaneously. Again, let *r*~1~, ....., *r~no~* be the radii of the balls centred at baseline samples. Now let r be the 95th percentile (or quantile) of these radii. Instead of covering all of the baseline samples, we remove the 5% for which before computing the support. That is, the support is constructed as in Eq. 2 but with the union over all *k*=1, ....., *n*~0~. replaced by the union over {*k* : *r~k~* ≤ r'}.
+The estimate of the support in Eq. 2 is very conservative: Every subprofile S is nondivergent for every sample from the baseline population. This is unrealistic, not only in view of possible outliers among the baseline samples but also because these baseline samples may, in fact, contain a small proportion of nonbaseline cell types. Another drawback is that is yet to be specified. We address these two issues simultaneously. Again, let *r*~1~, ....., *r~no~* be the radii of the balls centred at baseline samples. Now let r be the 95th percentile (or quantile) of these radii. Instead of covering all of the baseline samples, we remove the 5% for which before computing the support. That is, the support is constructed as in Eq. 2 but with the union over all *k*=1, ....., *n*~0~. replaced by the union over {*k* : *r~k~* ≤ r'}.
 
-An example of the estimated support for two genes (\|*S*\|=2) and Y=0.1 is shown in the figure below.![](media/image17.png){width="5.223958880139983in" height="5.2012456255468065in"}
+An example of the estimated support for two genes (\|*S*\|=2) and Y=0.1 is shown in the figure below.![](media/image12.jpg)
 
-**Figure**
-
+#### Figure
 2D baseline support. Fifty normal samples (blue points) and 50 luminal A samples (red stars) were chosen at random from The Cancer Genome Atlas (TCGA) breast cancer data. The area of support computed using the normal samples is shown by the gray shade; the samples falling outside the hsupport are declared divergent.
-
-![](media/image18.PNG){width="1.4210531496062992in" height="0.25in"}The divergent set is denoted by ....... . D is a random set- that is, is sample dependent. For single features, where the supports are intervals \[l^0^~j~ , u^0^~j~\] the definition can be refined:
-
-![](media/image19.PNG){width="1.8335892388451445in" height="0.7813593613298337in"}
-
-We will then say that j is lower divergent if Z~j~ =-1 and upper divergent if Z~j~ =1, and let D^l^(X)={ j : Z~j~ =-1} and D^U^(X)={ j : Z~j~ =1} denote the set of lower divergent and upper divergent features.
-
-![](media/image20.PNG){width="0.5416666666666666in" height="0.25in"}Returning to the choice of Y, a natural way to control the level of baseline divergence is to limit on the average fraction of divergent features in the baseline population, namely , where M=\|J\| for single features and M=N for a family of N subsets. We then select the smallest Y, which achieves this fraction α, where the same is used for every support estimator. Therefore, once α is fixed, there are no other parameters to specify. This is because α determines Y and Y determines the radii r1, ..., r~n0~, which in turn determine the estimated supports
-
-**INTUITION FOR THE DIVERGENCE MODEL**
+### INTUITION FOR THE DIVERGENCE MODEL
 
 Both Divergence and the Quantile Normalization are sample properties. Since, we have small n (number of samples) and large p (number of parameters) divergence model can be used for the classification of individuals to different Prakritis trained with less number of samples yet providing optimal accuracies.
 
