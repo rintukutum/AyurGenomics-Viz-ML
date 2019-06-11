@@ -24,7 +24,7 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
  
 
 ## BITS scholars interested in the project
-- [Rohit Jain](https://github.com/Rohit2706)
+- ![](images/rohit-jain.jpeg)[Rohit Jain](https://github.com/Rohit2706)
 - [Ishita Mediratta](https://github.com/ishitamed19)
 - [Kartik Bhatia](https://github.com/bhatiakartik10)
 - [Syed Ahsan Abbas](https://github.com/ahsanabbas123)
