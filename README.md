@@ -2,10 +2,14 @@
 Ayurgenomics visualisation and machine learning group
 
 
-## Proposal
+## Proposed title
 
-- To develop machine learning algorithm for visualizing heterogenous multidimentional 
-phenomics and genomics data
+`To develop machine learning algorithm for visualizing heterogenous multidimentional 
+phenomics and genomics data`
+
+## Objectives
+- To develop ML algorithm to visualize individual signature based on multiple phenotypes
+- To develop ML algorithm to associate phenotype with gene expression 
 
 ## BITS scholars invovled in the project
 
