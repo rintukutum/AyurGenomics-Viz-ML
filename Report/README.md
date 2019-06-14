@@ -310,7 +310,7 @@ accuracy was observed in LASSO, elastic net and Random forests models, which wer
 validated in another cohort (North cohort). Additionally, models were built to
 identify extreme Prakriti types from non-extreme Prakriti types. 
 
-![](media/image7.jpg)
+![](media/image7.png)
 > Figure 01: Illustration of methodology used in Tiwari P, Kutum R, Sethi TP et.al.
 
 <br><br><hr color='black' size=5><br><br>
