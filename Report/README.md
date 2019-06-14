@@ -380,7 +380,7 @@ The estimate of the support in Eq. 2 is very conservative: Every subprofile S is
 An example of the estimated support for two genes (\|*S*\|=2) and Y=0.1 is shown in the figure below.![](media/image12.jpg)
 
 #### Figure
-2D baseline support. Fifty normal samples (blue points) and 50 luminal A samples (red stars) were chosen at random from The Cancer Genome Atlas (TCGA) breast cancer data. The area of support computed using the normal samples is shown by the gray shade; the samples falling outside the hsupport are declared divergent.
+> 2D baseline support. Fifty normal samples (blue points) and 50 luminal A samples (red stars) were chosen at random from The Cancer Genome Atlas (TCGA) breast cancer data. The area of support computed using the normal samples is shown by the gray shade; the samples falling outside the hsupport are declared divergent.
 
 ![](media/divergent.png)
 
