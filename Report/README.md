@@ -50,23 +50,22 @@ NISHCHIT SONI (2017B3A71035P)
 
 <br><br><hr color='black' size=5><br><br>
 
+# <u><center>OBJECTIVES</center></u>
+
+1. To develop ML algorithm to visualize individual-level signature based on multiple phenotypes
+  * Develop an algorithm to capture phenotype to phenotype relationship
+  * Develop an algorithm to capture within Prakriti signatures
+  * Develop an algorithm to capture between Prakriti signatures
+  * Design visual representation of individual-level signature based on the above algorithms
+2. To develop ML algorithm to associate phenotype with gene expression
+  * Use existing methodologies to find above associations
+  * Develop novel ML algorithms to find the multi-phenotype association with molecular cues
+
+<br><br><hr color='black' size=5><br><br>
+
 # <u><center>ABSTRACT</center></u>
 
-Technological advancement in high-throughput experiments (HTE) allows us to decipher many 
-biological insights, such as, how transcription factor interact with the downstream genes. 
-This is done with the aid of machine learning algorithms. Machine learning algorithms 
-play a very vital and integral part in understanding the complex biological event of 
-profiling the multitude of genes and uncovering patterns from it. Most HTE involve experiments 
-have the phenotypes of interest (X~pheno~) simple, such as (case/control, normal/disease conditions)
-and accordingly there are algorithms to infer genes (Y~g~) as predictors of these phenotypes 
-(e.g. cancer). In recent years, we have started appreciating the fact that other covariate such 
-as age, sex, environmental conditions along with our phenotype of interest could play a vital 
-role in regulation within the cellular level.
-
-In the Ayurveda system of medicine, individuals are classified into seven constitution types, 
-"Prakriti", for assessing disease susceptibility and drug responsiveness, which are assigned 
-to an individual based on these phenotypes. We aim to develop machine learning algorithms 
-for visualizing this heterogeneous multi-dimensional phenomics and genomics data.
+In the Ayurveda system of medicine, individuals are classified into seven constitution types, "Prakriti", for assessing disease susceptibility and drug responsiveness, which are assigned to an individual based on a set of phenotypes. Phenotypes can be categorised into 4 main types, 1) Anatomy 2) Physical 3) Physiological and 4) Psychological. In total, more than 100 phenotypes are required to assess Prakriti types of an individual by an Ayurvedic physician. Existing visual representation exist such as somatotype, which represents persons’ physical and psychological traits based on quantitative measures. But Prakriti phenotyping is through only qualitative measurements. Various machine learning algorithms exist such as PCA, MDS plot, tSNE, etc, for the visual representation of large scale datasets. Here, we aim to develop machine learning algorithms for visualizing this heterogeneous multi-dimensional phenomics and genomics data. Firstly, we used qualitative phenotypes to develop and design algorithms for visual representation at individual-level. Secondly, we intend to use existing algorithms and design algorithms to find an association between quantitative phenotype with molecular phenotypes such as gene expression profiles.
 
 <br><br><hr color='black' size=5><br><br>
 
@@ -97,18 +96,18 @@ i. Abstract ii. Acknowledgement
  <li> Knowing The Organization </li>
  <ul>
   <li> Mission </li>
-  <li> Achievements </li>
   <li> Research Areas </li>
  </ul>
  <li> Introduction </li>
- <li> Ayurveda </li>
- <li> Ayurgenomics </li>
+ <li> About Genomics </li>
+ <li> Machine Learning in Genomics </li>
+ <li> Ayurveda and Genomics: AyurGenomics</li>
+ <li> Machine Learning in Ayurgenomics </li>
  <li> Research Paper Discussion </li>
  <ul>
-  <li> Plos One: Recapitulation Of Ayurveda Constitution Types By Machine Learning Of Phenotypic Traits </li>
   <li> Divergence Model For Classification </li>
  </ul>
-<li> Citations </li> 
+<li> References </li> 
 </ol>
 
 <br><br><hr color='black' size=5><br><br>
@@ -130,18 +129,6 @@ The Functional Genomics Unit was established in 1998 with the focus
 shifting from chemical to genomics research. The institute was renamed 
 \"Institute of Genomics and Integrative Biology\" in 2002.
 
-## ACHIEVEMENTS
-
-In 2009, a team at the Institute sequenced the genome of the wild-type 
-Zebrafish, with about 1.7 billion base pairs. This made the fish, 
-which is native to the Himalayan region, the first vertebrate to 
-have its whole genome sequenced in India, as previously 
-Indian scientists had only sequenced bacteria and plant genomes.
-
-In December 2009, scientists at IGIB performed the first 
-re-sequencing of a human genome in India. The Institute 
-also collaborated on decoding the first Sri Lankan 
-genome and Malaysian genome.
 
 ## RESEARCH AREAS
 
@@ -212,376 +199,121 @@ biological processes.
 
 # <u><center>INTRODUCTION</center></u>
 
-In today's time, there has been an ever-increasing need on 
-the endo-phenotyping and omics studies for stratifying groups 
-on the basis of differences in susceptibility, prognosis and 
-therapeutics towards diseases, which is the underlying basis 
-for the P4 medicine. While there have been a lot of methods 
-developed in modern times, India already has a 5000-years old 
-study of Ayurveda. In the Ayurveda system of medicine, individuals 
-are classified into 7 constitution types, "Prakriti", for assessing 
-disease susceptibility and drug responsiveness. Prakriti evaluation 
-involves clinical examination including questions about physiological 
-and behavioural traits. V, P and K are referred to as extreme (distinct) 
-Prakriti while other four Prakriti types VP, PK, VK and VPK are referred 
-here as non-extreme Prakriti.
+It is well recognized that genetic variations in genes and gene to gene interactions
+can lead to system-wide level changes, which might confer differential response
+among individuals to a disease condition. Currently, various -omics studies suggest
+better management or diagnosis of diseases such as, cancer immunotherapy,
+through stratification of patients based on endophenotypes (mRNA, miRNA, protein
+profiles). Ayurveda is a traditional Indian system of medicine which provides a
+methodology to stratify healthy individuals into categories on the basis of phenotypic
+attributes. The individuals in each category can have specific susceptibility towards
+different diseases, and drug responsiveness as mentioned in Ayurveda. The
+underlying philosophy of Ayurveda emphasizes on the use of natural means to
+eliminate the root cause of the disease and maintain homeostasis with the
+environment. The system proposes the concept of ‘Tridoshas’ namely Vata, Pitta, and
+Kapha. Different proportions of these ‘Tridoshas’ yields into seven Prakriti types,
+namely Vata(V), Pitta(P), Kapha(K), VP, PK, VK and VPK; thus prescribing a distinctive
+treatment plan based on their unique constitution. Prakriti evaluation involves
+clinical examination including questions about anatomical, physiological, physical and
+psychological traits. This approach while providing an ideal framework for the
+stratification of the diseased and the healthy population also takes into account the
+individual variations thus improving the drug efficacy. The traits, when identified with
+the corresponding Prakriti type, can be used as the basis for the prescription of the
+medicine thus working towards the idea of Predictive, Preventive, Personalized and
+Participatory (P4) medicine.
 
-#### Whole genome expression and molecular correlates between Ayurveda and Modern Medicine
-
-It is well acknowledged that subtle variations in large 
-number of genes and their interactions can give rise to 
-system-wide changes which confer differential predisposition 
-to diseases. These variations are common and contribute to 95% 
-of the inter-individual differences observed both at the 
-expression and genetic level in a population. The differences 
-between subsets of individuals from a homogeneous population 
-which are at the phenotypic endpoints of normal health spectrum 
-were identified using method of classification described in 
-Ayurveda. The extreme constitution types reveal differences at 
-the gene expression level as well as biochemical levels and also 
-included genes with reported disease involvement. Interestingly, 
-they also reveal differences in a significant number of hub and 
-housekeeping genes which if perturbed can have system-wide effects.
-
-To optimally extract useful knowledge contained within Ayurveda, 
-it is important to develop a modern framework in which such 
-assumptions are tested, followed by the development of methods 
-that would enable standardised implementations that are rapid, 
-accurate and scalable. Therefore, there is a need to develop a 
-computational framework for predicting Prakriti classes from 
-phenotypic attributes, which may be useful in precision medicine 
-for stratification of endophenotypes in healthy and diseased populations.
-
-**In the following sections, we'll be explaining the underlying 
-concepts that will be used along the course of our project, 
-covering a brief summary of various literatures already read 
-by the group.**
 
 <br><br><hr color='black' size=5><br><br>
 
-# <u><center>AYURVEDA</center></u>
+# <u><center>ABOUT GENOMICS</center></u>
 
-### INTRODUCTION
+Genomics or functional genomics aims to characterize the function of every genomic
+element of an organism by using genome-scale high throughput assays such as
+genome sequencing, transcriptome profiling, epigenomics, metabolomics, and
+proteomics (2). Genomics can give insights about plausible associations between
+genotype and phenotype (3), discovering biomarkers for patient stratification,
+predicting functions of genes etc.(4)
+After the publication by James D. Watson and Francis Crick confirmed the structure
+of DNA in 1953 (6), nucleic acid sequencing became a major point of interest for early
+molecular biologists, leading to the discovery of “codons” in the DNA by Marshall
+Nirenberg and Har Gobind Khorana led research team in 1961 and the first nucleic
+acid sequence in 1964 by Robert Holley and his colleagues (7).
+In 1977, Frederick Sanger developed a sequencing technique for DNA to sequence
+the first complete genome, called phiX174 virus, which opened the doorway to the
+possibility in the field of genomics.
+The Human Genome Project was launched in 1990 with the aim to sequence all 3
+billion letters of the human genome. Chromosome 22 was the first chromosome to
+be sequenced as a part of this project in 1999. The project was completed in 2003
+and confirmed that humans have 20,000-25,000 genes (8). In 2007, there was a
+breakthrough in the technology used to sequence DNA, which led to a 70-fold
+increase in the output of DNA sequencing in one year. This led to the launch of the
+1000 Genes Project in 2008, which aimed to sequence the genomes of a large
+population group of 2500.
 
-**Ayurveda** is a system of medicine with historical roots 
-in the [Indian subcontinent](https://en.wikipedia.org/wiki/Indian_subcontinent). 
-Globalized and modernized practices derived from Ayurveda traditions are a type 
-of [alternative medicine](https://en.wikipedia.org/wiki/Alternative_medicine). 
-In countries beyond India, Ayurvedic therapies and practices 
-have been integrated in general [wellness](https://en.wikipedia.org/wiki/Wellness_(alternative_medicine)) applications and in some cases in medical use.
+### Indian Genome Variation Project
 
-The main classical Ayurveda texts begin with accounts of the 
-transmission of medical knowledge from the Gods to sages, 
-and then to human physicians. Ayurveda therapies have varied 
-and evolved over more than two millennia. Therapies are 
-typically based on complex herbal compounds, minerals and 
-metal substances (perhaps under the influence of early 
-Indian alchemy or [*rasa shastra*](https://en.wikipedia.org/wiki/Rasa_shastra)). 
-Ancient Ayurveda texts also taught surgical techniques, including 
-rhinoplasty, [kidney stone extractions](https://en.wikipedia.org/wiki/Lithotomy), 
-sutures, and the extraction of foreign objects.
-
-The central theoretical ideas of Ayurveda developed in 
-the mid-first millennium BCE, and show parallels with 
-Sāṅkhya and Vaiśeṣika philosophies, as well as with 
-Buddhism and Jainism. Balance is emphasized, and 
-suppressing natural urges is considered unhealthy 
-and claimed to lead to illness. For example, to suppress 
-sneezing is said to potentially give rise to shoulder pain. 
-However, people are also cautioned to stay within the limits of 
-reasonable balance and measure when following nature\'s urges. For 
-example, the emphasis is placed on moderation of food intake, sleep, 
-and sexual intercourse.
-
-Ayurveda names seven basic tissues ([dhatu](https://en.wikipedia.org/wiki/Dhatu_(Ayurveda))), which are plasma (*rasa*), blood (*rakta*), muscles (*māmsa*), fat (*meda*), bone (*asthi*), [marrow](https://en.wikipedia.org/wiki/Bone_marrow) (*majja*), and semen (*shukra*). Like the medicine of classical antiquity, Ayurveda has historically divided bodily substances into five [classical elements](https://en.wikipedia.org/wiki/Classical_element#Classical_elements_in_Hinduism), (Sanskrit) [*panchamahabhuta*](https://en.wikipedia.org/wiki/Panchamahabhuta), viz. [earth](https://en.wikipedia.org/wiki/Prithvi), [water](https://en.wikipedia.org/wiki/Ap_(water)), [fire](https://en.wikipedia.org/wiki/Agni), [air](https://en.wikipedia.org/wiki/Vayu) and [ether](https://en.wikipedia.org/wiki/Ether_(classical_element)).
+The Indian Genome variation project was initiated in 2003 by six laboratories of
+Council of Scientific and Industrial Research (CSIR) based on a network program
+which focussed primarily on repeats and single nucleotide polymorphism[25]. The
+objective was to collect 15000 individual from different subpopulation considering
+the ethnic diversity in the country and identify 1000 genes related to common
+diseases and drug responses and identify a minimum of five to ten informative
+markers per the Indian subpopulation gene. Being the first large scale comprehensive
+study of the structure of Indian population, the project aims to meet the ultimate
+goal of creating a DNA variation database of the Indian population to study the
+human biology with respect to disease predisposition and adverse drug reaction.
 
 <br><br><hr color='black' size=5><br><br>
 
-# AYURGENOMICS
+# MACHINE LEARNING IN GENOMICS
 
-### INTRODUCTION
+There has been an exponential increase in the number of multi-dimensional, highly-complex datasets available, that have been generated through years of research in
+the last 20 years. The immense amount of genomics data generated by genomic
+researchers provide a huge opportunity for the development of statistical machine
+learning algorithms to uncover patterns from it. These statistical machine learning
+methods can be used in identifying different types of genomic elements, recognizing
+patterns in DNA sequences, and developing models that can take other genetic and
+genomic information as input to build systems to help understand the biological
+mechanisms of underlying genes etc (9)
+Machine learning is an emerging field in computer science wherein algorithms are
+developed and programmed to infer patterns and gain novel insights from the data,
+using a plethora of mathematical concepts. The learned model can then be used to
+predict any range of outputs, such as binary responses, categorical labels, or
+continuous values (13). A few applications of statistical machine learning in the field
+of genomics is mentioned in Table 01.
 
-![](media/image3.jpg)
+![](media/table01.png)
 
-In Ayurveda texts, though the principles of phenotypes in 
-health and disease states are extremely well described, they
- are not readily decipherable and hence its potential has not
-  been appreciated by modern genomic researchers. According 
-  to Ayurveda individual's basic constitution (Prakriti) 
-  describes its predisposition and prognosis to disease 
-  status and also the treatment for disease and lifestyle 
-  regime. In Genomics, an individual's basic constitution 
-  is decided by its genetic makeup which indirectly reflects
-   the levels of various biochemical parameters in an 
-   individual which states its Health status. The authors 
-   aimed at the establishment of a high correlation of 
-   Prakriti with genomic signatures by isolating DNA, RNA 
-   and Plasma from the blood sample.
+<br><br><hr color='black' size=5><br><br>
 
-It is anticipated that this approach of Ayurgenomics 
-would allow the development of surrogate methods for 
-cost-effective screening of predisposed individuals 
-in the population. This would result in the development 
-of an integrative approach to systems biology for disease
- and health state.
+# AYURVEDA and GENOMICS: AYURGENOMICS
 
-Ayurveda follows a systems approach that has 
-interesting parallels with contemporary personalized 
-genomic medicine approaches to the understanding and
- management of health and disease. It is based on the 
- trisutra, meaning the three interconnected aspects of 
- causes (hetu), features (linga) and therapeutics 
- (aushadha) both for healthy and diseased people. The 
- question thus arises as to whether there are molecular 
- and genomic correlates of trisutra that are interconnected 
- through a common organizing principle termed 'tridosha'.
-
-Tridosha comprises three ascertainable physiological 
-entities; Vata (kinetic), pitta (metabolic) and Kapha 
-(potential) that are pervasive across systems, work in 
-conjunction with each other, respond to the external
- environment and maintain homeostasis. Each individual 
- is born with a specific proportion of tridosha that 
- are not only genetically determined but also influenced 
- by the environment during foetal development. Jointly 
- they determine a person's basic constitution, which is 
- termed their 'prakriti'. Development and progression 
- of different diseases with their subtypes are thought 
- to depend on the origin and mechanism of perturbation 
- of the doshas, and the aim of the therapeutic practice 
- is to ensure that the doshas retain their homeostatic 
- state. Similarly, western systems biology epitomized by
-  translational P4 medicine envisages the integration 
-  of multiscalar genetic, cellular, physiological and 
-  environmental networks to predict phenotypic outcomes 
-  of perturbations.
-
-The concepts and practice of Ayurveda resonate with the 
-aims, observations and the promise of contemporary P4 
-medicine; it is predictive, preventive, personalized and 
-participatory medicine. Currently, the science of network
- medicine is primarily observational, involving big data 
- and large amounts of correlations.
-
-In Ayurveda system of medicine individuals are classified 
-into seven constitution types, "*Prakriti*", 
-for assessing disease susceptibility and drug responsiveness. 
-*Prakriti* evaluation involves clinical examination including 
-questions about physiological and behavioural traits. In the 
-present era of phenomics, there has been an increase in emphasis 
-on endo-phenotyping along with omics approaches for identification 
-of groups that differ in susceptibility, prognosis and therapeutic 
-requirements. There is an unmet need for the development of adequate 
-phenotyping methods for stratification of healthy individuals at a
- systemic level. Phenotypic stratification of healthy individuals 
- forms the primary basis for predictive and personalised medicine
-  in Ayurveda.
-
-![](media/image4.jpg)
-
-A study has revealed molecular differences between the extreme 
-*Prakriti* types. Assuming that the *Prakriti* types correspond 
-to objectively identifiable sub-phenotypes, they should form 
-clusters within a multidimensional space where the axes conform 
-to the phenotypic traits used for clinical stratification To
- optimally extract useful knowledge contained within Ayurveda, 
- it is important to develop a modern framework *Prakriti* assessment 
- involves examination of more than 150 features with anatomical and 
- physical activity related attributes that can be directly examined 
- and physiological and psychological parameters inferred based on the 
- responses of the individual and past history.
-
-![](media/image5.jpg)
-
-### Ayurgenomics: A New Way of Threading Molecular Variability for Stratified Medicine
-
-
-To explore the molecular basis of three most different Prakriti 
-types, predominantly V, P, and K a questionnaire was designed 
-that could capture the clinical features described in Ayurvedic 
-literature for phenotyping of Prakriti in an objective manner. 
-To minimise the effect of confounding factors on the expression 
-of Prakriti, we conducted our study on age- and sex-matched subjects 
-from a genetically homogeneous Indo-European (IE) background. 
-The homogeneity of the V, P, and K subjects and relatedness with 
-the background population was confirmed through phylogenetic 
-analysis using a set of unlinked markers studied in the Indian 
-Genome Variation Consortium project. individuals who have a 
-predominance of V, P, or K in their Prakriti exhibit differences in
-
-- Gross biochemical levels in peripheral blood
-
-- Expression at the genome-wide levels
-
-- Genetic level, i.e., variations in DNA that are more stable than gene expression
-
-Significant differences in biochemical profiles between the Prakriti 
-types were further validated through bootstrap resampling. For instance, 
-P males had higher values for
-
-Most of the haematological parameters such as haemoglobin.
-
-Transcriptional profiles of pooled RNA from V, P, and K 
-revealed differences in core biological processes between 
-these Prakriti groups. This led us to hypothesise that there
- is indeed an underlying cellular system in each Prakriti 
- type that can be assessed through the modern genomics approach, 
- for example, the Ayurvedic abstraction of Kapha as being the 
- promoter of anabolic state overlapped with the overall up regulation 
- of genes involved in cellular biosynthesis including ATP and cofactor 
- biosynthesis and purine salvage pathway.
-
-Different facets of the immune function seemed to be 
-differentially modulated in different Prakriti types. 
-Thus susceptibility to infections, atopy, and allergic 
-reactions are likely to vary according to the constitution 
-types. This is important as host adaptive and innate immune 
-responses shape the human systems biology through the 
-diet-microbiota axis. Also noteworthy among the differentially 
-expressed genes was a significant over-representation of hub 
-and housekeeping genes. Differential expression of hub genes 
-could, therefore, modulate a series of networks and pathways 
-and could have system-wide effects. P had overexpression of 
-hub genes involved in pro-apoptotic functions and positive 
-regulation of innate immune response.
-
-Genetic analysis was carried out on a subset of differentially 
-expressed genes to test whether common variations in these genes 
-exhibit differences between the constitution types; 14 SNPs were 
-observed from 5 genes to differ significantly between the Prakriti 
-types. The genes that distinguish
-
-These groups are involved in development (FAS, AKT3, FBN2), 
-multiple signalling pathways (FAS, AKT3), interact with various 
-proteins (RAD51, FAS, INSR), or are prominent drug targets (EGLN1, FAS, AKT3).
-
-Most importantly, once the genotypes of all the constitution 
-types were pooled, the combined allele frequency was similar 
-to the Indo-European background population that they were 
-derived from. This indicates that inherent genetic differences 
-within a heterogeneous mix of healthy individuals get masked 
-in the absence of a method that allows us to stratify them.
+Ayurgenomics is an emerging field that integrates high-throughput genomics
+experiments to investigate Ayurvedic stratification methodology (Prakriti)(18).
+Prasher B. et.al., (24) showed molecular signatures and biochemical among extreme
+Prakriti types (K, P & V) based on 96 healthy individuals. One of the genes identified
+in this study was EGLN1(27), which was further studied in detail to understand the
+association of genotypes(SNP) with high-altitude adaptation (disease condition, High
+Altitude Pulmonary Edema). 
 
 <br><br><hr color='black' size=5><br><br>
 
 
-# PLOS ONE: Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits
+# MACHINE LEARNING IN AYURGENOMICS
 
-### INTRODUCTION
+Tiwari P, Kutum R, Sethi TP et.al.,(20) developed machine learning models to classify
+extreme Prakriti types based on 154 questionnaire data Figure 01. They have used
+unsupervised clustering approaches to uncover structure within the questionnaire
+data of 147 individuals. Based on supervised learning minimum feature sets were
+identified to the classification of extreme Prakriti types. More than 85% mean
+accuracy was observed in LASSO, elastic net and Random forests models, which were
+validated in another cohort (North cohort). Additionally, models were built to
+identify extreme Prakriti types from non-extreme Prakriti types. 
 
-A need was felt to develop models for accurately predicting 
-Prakriti classes that have been shown to exhibit molecular 
-differences. The present study was carried out on data of 
-phenotypic attributes in 147 healthy individuals of three 
-extreme Prakriti types, from a genetically homogeneous 
-population of Western India. Unsupervised and supervised machine 
-learning approaches were used to infer the inherent structure of 
-the data, and for feature selection and building classification 
-models for Prakriti respectively. This study was the first to 
-demonstrate that Prakriti types are distinct verifiable clusters 
-within a multidimensional space of multiple interrelated phenotypic 
-traits. It also provides a computational framework for predicting 
-Prakriti classes from phenotypic attributes. This approach may be 
-useful in precision medicine for stratification of endophenotypes 
-in healthy and diseased populations.
+![Figure 01: Illustration of methodology used in Tiwari P, Kutum R, Sethi TP et.al.](media/image7.jpg)
 
-### METHODS
 
-1. Recruitment of subjects and clinical assessment of Prakriti - 
-Detailed Prakriti evaluation was carried out in 528 individuals by Ayurveda 
-physicians using a questionnaire and subjects assigned into one of 
-the seven subtypes.
-
-2. Pre-processing of data - Out of the original questionnaire,
- 133 questions were finally included for the final study.
-
-3. Genetic homogeneity of the population - The genetic relatedness
- and homogeneity of the VADU cohort with Indian population was 
- established by analysis of the VADU genotype data with shared 
- SNPS in the Indian Genome Variation Consortium panel.
-
-4. Unsupervised clustering of individuals - A random forest model 
-consisting of 1 million decision trees was constructed in 
-unsupervised mode to derive similarity matrix. Silhouette 
-width was used as a criterion to identify optimum cluster 
-numbers. A similar analysis was carried out on all samples 
-to test whether non-extreme samples were indeed a mixture of
- the constituent Prakriti types.
-
-5. Supervised modelling of the questionnaire - Three methods 
-were used for extreme Prakriti modelling of the questionnaire.
-
- a. LASSO model - The regression framework of the LASSO model 
- was used for extreme Prakriti modelling as it addresses the 
- problems of multicollinearity arising out of a large number 
- of explanatory variables. It includes a penalty function in 
- the model that shrinks the regression coefficients of 
- insignificant or unnecessary explanatory variables to zero.
-
- b. Elastic net model - When the data have highly correlated 
- predictors LASSO tends to select only one variable and removes 
- the correlated variable/s. Since there might be some interaction 
- involved in the variables, grouped selection might be needed for 
- future reference which is done in the elastic net.
-
- c. Random forests model - Random forests (RF) is an ensemble 
- decision tree based algorithm, where each decision tree is built 
- independently from different bagging samples and randomly 
- selecting a subset of features. Two parameters namely ntree 
- (number of decision trees) and mtry (a subset of features to 
- be chosen randomly) were optimized before building the final 
- training model.
-
-6. Validation of models on an external dataset from a different 
-population - The models were validated in a dataset of an earlier 
-study from the North Indian population.
-
-### RESULTS
-
-1. Genotyping analysis confirmed the genetic homogeneity of the 
-study Population - Vadu cohort belongs to an Indo-European background 
-from Western India. The genetic homogeneity of the cohort was confirmed 
-using a panel of markers from Indian Genome.
-
-2. Identification of extreme Prakriti - A total of 147 extreme Prakriti
- individuals were identified which consisted of three types namely 
- Kapha (n = 46), Pitta (n = 35) and Vata (n = 66). Apart from extreme
-  Prakriti type, 106 samples were also classified as non-extreme 
-  type VP, PK and VK.
-
-3. The emergence of three distinct robust clusters 
-through unsupervised learning of questionnaire data 
-from extreme Prakriti.
-
-![](media/image6.jpg)
-
-4. Three distinct supervised learning approaches 
-provide a core set of variables that accurately predict 
-Prakriti - Through feature selection methods, identified 
-a minimal set of features from the 133 attributes that 
-could most accurately identify the extreme groups from a 
-heterogeneous population.
-
-5. Replication of Prakriti models across two 
-cohorts of diverse genetic backgrounds - Tested 
-all the three models built on Vadu cohort in a 
-North Indian data from our earlier study. The 
-class-wise accuracy (sensitivity) for Kapha, Pitta and Vata 
-was 93.1%, 82.7% and 94.7% respectively from the LASSO model 
-and 96.5%, 86.2% and 97.3% respectively from elastic net and 
-100%, 79.3% for Pitta and 97.37% for Vata.
-
-6. Development of a classifier for identification of 
-extreme Prakriti groups from heterogeneous populations
- - It was tested whether extreme or non-extreme Prakriti
-  with equal accuracy. Using the above model, probability 
-  distributions of Prakriti-membership scores upon 
-  non-extreme data did not show a preferential skew 
-  towards any of the labels.
-
-![](media/image7.jpg)
-
-<br><br><hr color='black' size=5>
+<br><br><hr color='black' size=5><br><br>
 
 # DIVERGENCE MODEL FOR CLASSIFICATION
 
@@ -590,8 +322,6 @@ extreme Prakriti groups from heterogeneous populations
 Quantile is a line that divides a sample distribution into 
 equal subgroups. By definition, the median of a sample is 
 a 50% or a 0.5 quantile.
-
-![](media/image8.jpg)
 
 Each individual omic profile can be transformed into quantile 
 space by replacing each element of the profile is replaced by 
@@ -651,20 +381,77 @@ An example of the estimated support for two genes (\|*S*\|=2) and Y=0.1 is shown
 
 #### Figure
 2D baseline support. Fifty normal samples (blue points) and 50 luminal A samples (red stars) were chosen at random from The Cancer Genome Atlas (TCGA) breast cancer data. The area of support computed using the normal samples is shown by the gray shade; the samples falling outside the hsupport are declared divergent.
+
+![](media/divergent.png)
+
+for a family of N subsets. We then select the smallest Y, which achieves this
+fraction α, where the same is used for every support estimator. Therefore, once
+α is fixed, there are no other parameters to specify. This is because α
+determines Y and Y determines the radii r1, …, rn0, which in turn determine the
+estimated supports
+
 ### INTUITION FOR THE DIVERGENCE MODEL
 
 Both Divergence and the Quantile Normalization are sample properties. Since, we have small n (number of samples) and large p (number of parameters) divergence model can be used for the classification of individuals to different Prakritis trained with less number of samples yet providing optimal accuracies.
 
 <br><br><hr color='black' size=5><br><br>
 
-# <u><center>CITATIONS</u><center>
+# <u><center>REFERENCES</u><center>
 
-- 2017, PLoS One, [[Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits]](https://doi.org/10.1371/journal.pone.0185380)
-
-- 2011, ACS Chemical Biology, [[Ayurgenomics: A New Way of Threading Molecular Variability for Stratified Medicine]](https://doi.org/10.1021/cb2003016)
-
-- 2016, Journal of Genetics, [[Genomic insights into ayurvedic and western approaches to personalized medicine]](https://www.ias.ac.in/article/fulltext/jgen/095/01/0209-0228)
-
-- 2018, PNAS, [[Digitizing omics profiles by divergence from a baseline]](https://www.pnas.org/content/115/18/4545.long)
-
-- 2008, Journal of Translational Medicine, [[Whole genome expression and biochemical correlates of extreme constitutional types defined in Ayurveda]](https://doi.org/10.1186/1479-5876-6-48) 
+1. Systems Biology and P4 Medicine: Past, Present, and Future PMID: 23908862
+2. Hieter, P. & Boguski, M. Functional genomics: it’s all how you read it. Science
+278, 601–602 (1997). PMID: 9381168
+3. Ozaki, K. et al. Functional SNPs in the lymphotoxin-α gene that are associated
+with susceptibility to myocardial infarction. Nat. Genet. 32, 650–654 (2002).
+PMID: 12426569
+4. Golub, T. R. et al. Molecular classification of cancer: class discovery and class
+prediction by gene expression monitoring. Science 286, 531–537 (1999)
+5. Oliver, S. Guilt-by-association goes global. Nature 403, 601–603 (2000) PMID:
+10688178
+6. Watson JD, Crick FH. 1953. Molecular structure of nucleic acids: a structure for
+deoxyribose nucleic acid. Nature 171: 737–38
+7. Maxam AM, Gilbert W. 1977. A new method for sequencing DNA. PNAS 74:
+560–64 PMID: 265521
+8. Lander ES, Linton LM, Birren B, Nusbaum C, Zody MC, et al. 2001. Initial
+sequencing and analysis of the human genome. Nature 409: 860–921 PMID:
+11237011
+9. Libbrecht MW, Noble WS. Machine learning applications in genetics and
+genomics. Nat Rev Genet. 2015;16(6):321–332. doi:10.1038/nrg3920 PMID:
+25948244
+10. Camacho et al., Next-Generation Machine Learning for Biological Networks,
+Cell (2018), PMID: 29887378
+11. E. S. Lander et al., ‘‘Initial sequencing and analysis of the human genome,’’
+PMID: 15829235
+12. Deep learning for genomics, https://doi.org/10.1038/s41588-018-0328-0
+13. Karr et al., "A whole-cell computational model predicts phenotype from
+genotype. Cell 150, 389-401. PMID: 22817898
+14. Chen, B., and Butte, A.J. (2016). Leveraging big data to transform target
+selection and drug discovery. Clin. Pharmacol. Ther. 99, 285–297. PMID:
+26659699
+15. di Bernado et al. Chemogenomic profiling on a genome-wide scale using
+reverse-engineered gene networks. Nat. Biotechnol. 23, 377–383.
+16. L. Cong et al., ‘‘Multiplex genome engineering using CRISPR/Cas systems,’’
+Science, vol. 339, no. 6121, pp. 819–823, 2013. PMID: 23287718
+17. September 2016, IAS, blogadmin, Ayurgenomics – a new player in biomedical
+sciences
+18. Prasher B., Gibson G. and Mukerji M. 2016 Genomic insights into ayurvedic and
+western approaches to personalized medicine. PMID: 27019453
+19. Parasuraman S, Thing GS, Dhanaraj SA. Polyherbal formulation: Concept of
+Ayurveda. Pharmacogn Rev. PMID: 25125878
+20. 2017, PLoS One, Recapitulation of Ayurveda constitution types by machine
+learning of phenotypic traits PMID: 28981546
+21. 2011, ACS Chemical Biology, Ayurgenomics: A New Way of Threading
+Molecular Variability for Stratified Medicine
+22. 2016, Journal of Genetics, Genomic insights into ayurvedic and western
+approaches to personalized medicine
+23. 2018, PNAS, Digitizing omics profiles by divergence from a baseline
+24. 2008, Journal of Translational Medicine, Whole genome expression and
+biochemical correlates of extreme constitutional types defined in Ayurveda
+25. 2005, Springer link, the Indian genome variation database: a project
+overview.[pmid :16133172 ]
+26. 2017, Journal of Ethnopharmacology, Ayurgenomics for stratified medicine:
+TRISUTRA consortium initiative across ethnically and geographically diverse
+Indian populations[ pmid:28981546]
+27. 2010, PNAS, EGLN1 involvement in high altitude adaptation revealed through
+genetic analysis of extreme constitution datatypes defined in
+Ayurveda.[pmid: 20956315]
