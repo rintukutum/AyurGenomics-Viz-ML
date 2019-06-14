@@ -380,15 +380,10 @@ The estimate of the support in Eq. 2 is very conservative: Every subprofile S is
 An example of the estimated support for two genes (\|*S*\|=2) and Y=0.1 is shown in the figure below.![](media/image12.jpg)
 
 #### Figure
-> 2D baseline support. Fifty normal samples (blue points) and 50 luminal A samples (red stars) were chosen at random from The Cancer Genome Atlas (TCGA) breast cancer data. The area of support computed using the normal samples is shown by the gray shade; the samples falling outside the hsupport are declared divergent.
+2D baseline support. Fifty normal samples (blue points) and 50 luminal A samples (red stars) were chosen at random from The Cancer Genome Atlas (TCGA) breast cancer data. The area of support computed using the normal samples is shown by the gray shade; the samples falling outside the hsupport are declared divergent.
 
 ![](media/divergent.png)
-
-for a family of N subsets. We then select the smallest Y, which achieves this
-fraction α, where the same is used for every support estimator. Therefore, once
-α is fixed, there are no other parameters to specify. This is because α
-determines Y and Y determines the radii r1, …, rn0, which in turn determine the
-estimated supports
+![](media/divergent2.png)
 
 ### INTUITION FOR THE DIVERGENCE MODEL
 
