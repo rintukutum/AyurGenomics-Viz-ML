@@ -80,6 +80,10 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - Luscombe NM, Laskowski RA, Thornton JM. [Amino acid-base interactions: a three-dimensional analysis of protein-DNA interactions at an atomic level](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC55782/)
 - Kevin Struhl, [Fundamentally Different Logic of Gene Regulation in Eukaryotes and Prokaryotes](https://www.sciencedirect.com/science/article/pii/S0092867400805991?via%3Dihub#FIG1)
 
+### Machine Learning in Genomics
+- [A primer on deep learning in genomics](https://www.nature.com/articles/s41588-018-0295-5.pdf)
+- Nature Review Genetics, [Machine learning applications in genetics and genomics](https://www.nature.com/articles/nrg3920)
+
 ### Later
 - 2019, The Lancet, [A chronological map of 308 physical and mental health conditions from 4 million individuals in the English National Health Service](https://doi.org/10.1016/S2589-7500(19)30012-3)
 - 2019, The lancet, [Depicting the spectrum of diseases that occur during the lifespan of an individual based on electronic health records](https://doi.org/10.1016/S2589-7500(19)30023-8)
