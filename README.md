@@ -71,13 +71,18 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - 2017, PLoS One, [Recapitulation of Ayurveda constitution types by machine learning of phenotypic traits](https://doi.org/10.1371/journal.pone.0185380)
 - 2011, ACS Chemical Biology, [Ayurgenomics: A New Way of Threading Molecular Variability for Stratified Medicine](https://doi.org/10.1021/cb2003016)
 - 2016, Journal of Genetics, [Genomic insights into ayurvedic and western approaches to personalized medicine](https://www.ias.ac.in/article/fulltext/jgen/095/01/0209-0228)
+- [EGLN1 involvement in high-altitude adaptation revealed through genetic analysis of extreme constitution types defined in Ayurveda]
+- 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
 
 ### Now
 - Hunter K. John, UC Davis [Measure Theory Notes](https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf)
-- [EGLN1 involvement in high-altitude adaptation revealed through genetic analysis of extreme constitution types defined in Ayurveda]
-- Devroye L, Wise GL (1980) [Detection of abnormal behavior via nonparametric estimation of the support, SIAM J Appl Math 38:480–488]
-- 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
+- Devroye L, Wise GL (1980) [Detection of abnormal behavior via nonparametric estimation of the support, SIAM J Appl Math 38:480–488](https://pdfs.semanticscholar.org/9c34/6f8a40d31d884c8d5496d1d46a4a0b1848d7.pdf)
+- Luscombe NM, Laskowski RA, Thornton JM. [Amino acid-base interactions: a three-dimensional analysis of protein-DNA interactions at an atomic level](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC55782/)
+- Kevin Struhl, [Fundamentally Different Logic of Gene Regulation in Eukaryotes and Prokaryotes](https://www.sciencedirect.com/science/article/pii/S0092867400805991?via%3Dihub#FIG1)
 
+### Machine Learning in Genomics
+- [A primer on deep learning in genomics](https://www.nature.com/articles/s41588-018-0295-5.pdf)
+- Nature Review Genetics, [Machine learning applications in genetics and genomics](https://www.nature.com/articles/nrg3920)
 
 ### Later
 - 2019, The Lancet, [A chronological map of 308 physical and mental health conditions from 4 million individuals in the English National Health Service](https://doi.org/10.1016/S2589-7500(19)30012-3)
