@@ -83,6 +83,7 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 ### Machine Learning in Genomics
 - [A primer on deep learning in genomics](https://www.nature.com/articles/s41588-018-0295-5.pdf)
 - Nature Review Genetics, [Machine learning applications in genetics and genomics](https://www.nature.com/articles/nrg3920)
+- A Unified Entropy-Based Distance Metric for Ordinal-and-Nominal-Attribute Data Clustering (https://www.ncbi.nlm.nih.gov/pubmed/30908240)
 
 ### Later
 - 2019, The Lancet, [A chronological map of 308 physical and mental health conditions from 4 million individuals in the English National Health Service](https://doi.org/10.1016/S2589-7500(19)30012-3)
