@@ -42,8 +42,14 @@ phenomics and genomics data`
 </p>
 
 ## Mentors
-- [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
-- [Dr Mitali Mukerji](https://www.igib.res.in/?q=mitalimukerji)
+<a href="https://www.igib.res.in/?q=bhavnaprasher">
+	<img src="images/bhavana.jpg" title="Dr Bhavana Prasher" width="200" /> 
+</a>
+
+<a href="https://www.igib.res.in/?q=mitalimukerji">
+	<img src="images/mitali.gif" title="Dr Mitali Mukerji" width="200" /> 
+</a>
+
 
 ## TA
 - [Rintu Kutum](https://github.com/rintukutum)
@@ -93,3 +99,5 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 
 ### Exercise 
 - An Introduction to R - First 6 chapters
+
+### COPY MOVE FORGARY DETECTION
