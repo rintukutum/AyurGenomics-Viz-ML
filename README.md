@@ -41,7 +41,9 @@ phenomics and genomics data`
   </a>
 </p>
 (Rohit Jain) (Ishita Mediratta) (Kartik Bhatia) (Syed Ahsan Abbas)
+
 (Nishchit Soni) (Anmol Agarwal)
+
 ## Mentors
 <a href="https://www.igib.res.in/?q=bhavnaprasher">
 	<img src="images/bhavana.jpg" title="Dr Bhavana Prasher" width="200" /> 
@@ -50,6 +52,7 @@ phenomics and genomics data`
 <a href="https://www.igib.res.in/?q=mitalimukerji">
 	<img src="images/mitali.gif" title="Dr Mitali Mukerji" width="200" /> 
 </a>
+
 (Dr Bhavana Prasher); (Dr Mitali Mukerji)
 
 ## TA
