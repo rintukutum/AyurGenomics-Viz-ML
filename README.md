@@ -21,9 +21,9 @@ phenomics and genomics data`
 ## BITS scholars invovled in the project
 
 <p float="left">
-	<a href="https://github.com/Rohit2706">
-		<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
-	</a>
+  <a href="https://github.com/Rohit2706">
+	<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
+  </a>
   <a href="https://github.com/ishitamed19">
 	<img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="200" /> 
   </a>
@@ -40,7 +40,8 @@ phenomics and genomics data`
 	<img src="images/anmol.jpeg" title="Anmol Agarwal" width="200" /> 
   </a>
 </p>
-
+(Rohit Jain) (Ishita Mediratta) (Kartik Bhatia) (Syed Ahsan Abbas)
+(Nishchit Soni) (Anmol Agarwal)
 ## Mentors
 <a href="https://www.igib.res.in/?q=bhavnaprasher">
 	<img src="images/bhavana.jpg" title="Dr Bhavana Prasher" width="200" /> 
@@ -49,7 +50,7 @@ phenomics and genomics data`
 <a href="https://www.igib.res.in/?q=mitalimukerji">
 	<img src="images/mitali.gif" title="Dr Mitali Mukerji" width="200" /> 
 </a>
-
+(Dr Bhavana Prasher); (Dr Mitali Mukerji)
 
 ## TA
 - [Rintu Kutum](https://github.com/rintukutum)
