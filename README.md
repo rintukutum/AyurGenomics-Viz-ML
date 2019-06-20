@@ -40,7 +40,7 @@ phenomics and genomics data`
 	<img src="images/anmol.jpeg" title="Anmol Agarwal" width="200" /> 
   </a>
 </p>
-(Rohit Jain) (Ishita Mediratta) (Kartik Bhatia) (Syed Ahsan Abbas)
+(Rohit Jain)             (Ishita Mediratta) (Kartik Bhatia) (Syed Ahsan Abbas)
 
 (Nishchit Soni) (Anmol Agarwal)
 
