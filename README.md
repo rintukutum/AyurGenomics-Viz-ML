@@ -21,9 +21,9 @@ phenomics and genomics data`
 ## BITS scholars invovled in the project
 
 <p float="left">
-	<a href="https://github.com/Rohit2706">
-		<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
-	</a>
+  <a href="https://github.com/Rohit2706">
+	<img src="images/rohit-jain.jpeg" title="Rohit Jain" width="200" />
+  </a>
   <a href="https://github.com/ishitamed19">
 	<img src="images/ishita-mediratta.jpeg" title="Ishita Mediratta" width="200" /> 
   </a>
@@ -40,10 +40,20 @@ phenomics and genomics data`
 	<img src="images/anmol.jpeg" title="Anmol Agarwal" width="200" /> 
   </a>
 </p>
+(Rohit Jain)             (Ishita Mediratta) (Kartik Bhatia) (Syed Ahsan Abbas)
+
+(Nishchit Soni) (Anmol Agarwal)
 
 ## Mentors
-- [Dr Bhavana Prasher](https://www.igib.res.in/?q=bhavnaprasher)
-- [Dr Mitali Mukerji](https://www.igib.res.in/?q=mitalimukerji)
+<a href="https://www.igib.res.in/?q=bhavnaprasher">
+	<img src="images/bhavana.jpg" title="Dr Bhavana Prasher" width="200" /> 
+</a>
+
+<a href="https://www.igib.res.in/?q=mitalimukerji">
+	<img src="images/mitali.gif" title="Dr Mitali Mukerji" width="200" /> 
+</a>
+
+(Dr Bhavana Prasher); (Dr Mitali Mukerji)
 
 ## TA
 - [Rintu Kutum](https://github.com/rintukutum)
@@ -80,8 +90,10 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - Luscombe NM, Laskowski RA, Thornton JM. [Amino acid-base interactions: a three-dimensional analysis of protein-DNA interactions at an atomic level](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC55782/)
 - Kevin Struhl, [Fundamentally Different Logic of Gene Regulation in Eukaryotes and Prokaryotes](https://www.sciencedirect.com/science/article/pii/S0092867400805991?via%3Dihub#FIG1)
 
+
 ### Now
-- Zhang Y, IEEE, 2016, [A Unified Entropy-Based Distance Metric for Ordinal-and-Nominal-Attribute Data Clustering](https://ieeexplore.ieee.org/document/8671525)
+- Zhang Y, IEEE, 2019, [A Unified Entropy-Based Distance Metric for Ordinal-and-Nominal-Attribute Data Clustering](https://ieeexplore.ieee.org/document/8671525)
+
 
 
 ### Later
@@ -98,3 +110,5 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 
 ### Exercise 
 - An Introduction to R - First 6 chapters
+
+### COPY MOVE FORGARY DETECTION
