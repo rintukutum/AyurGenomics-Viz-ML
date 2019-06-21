@@ -48,6 +48,8 @@ play a vital role in regulation within cellular. Overview of phenomics and genom
 - [EGLN1 involvement in high-altitude adaptation revealed through genetic analysis of extreme constitution types defined in Ayurveda]
 - Devroye L, Wise GL (1980) [Detection of abnormal behavior via nonparametric estimation of the support, SIAM J Appl Math 38:480–488]
 - 2018, PNAS, [Digitizing omics profiles by divergence from a baseline](https://www.pnas.org/content/115/18/4545.long)
+### Questionnaire
+- Prakriti Questionnaire [https://static-content.springer.com/esm/art%3A10.1186%2F1479-5876-6-48/MediaObjects/12967_2008_278_MOESM2_ESM.pdf]
 
 
 ### Later
