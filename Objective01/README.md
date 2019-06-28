@@ -6,4 +6,4 @@
 	- visualize the distance between samples [done]
 	- estimate the cluster number [done]
 
-
+- Code review [in progress]
