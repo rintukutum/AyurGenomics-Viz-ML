@@ -3,7 +3,7 @@
 """
 Created on Fri Jun 28 11:34:13 2019
 
-@author: ishitamed
+@author: Rohit Jain, Ishita Mediratta, Kartik Bhatia, Anmol Agarwal, Syed Ahsan Abbas, Nischit Soni
 
 This code is meant to calculate the entropy-based distances using both, 
 ordinal & nominal attributes.
