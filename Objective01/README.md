@@ -7,3 +7,8 @@
 	- estimate the cluster number [done]
 
 - Code review [in progress]
+
+## TODOS:
+- Merge codebase and document it
+- Create 45 deg line to estimate most divergent features
+- Create heatmap based on those attributes
