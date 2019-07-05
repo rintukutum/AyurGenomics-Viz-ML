@@ -1,12 +1,19 @@
-Columns in labeled dataset and not in trial,,,,Columns in labeled dataset and not in trial,,,,Name mismatch
-hair_look,,,,Gender,,,,Nails_Nature2
-like_Cold,,,,,,,,StudyID
-like_Dry,,,,,,,,
-like_Oily,,,,,,,,
-nails_palate,,,,,,,,
-skin_clear,,,,,,,,
-suit_Astringent,,,,,,,,
-suit_Bitter,,,,,,,,
-suit_Cold,,,,,,,,
-suit_Sweet,,,,,,,,
-suit_Warm,,,,,,,,
+Columns in labeled dataset and not in trial,Columns in labeled dataset and not in trial,Name mismatch,Columns name changed,
+hair_look,Gender,Nails_Nature2,Old,New
+like_Cold,,StudyID,hair_feel,hair_feel_coarse
+like_Dry,,,hair_nature1,hair_graying
+like_Oily,,,hair_nature2,hair_falling
+nails_palate,,,hair_nature3,hair_breaking
+skin_clear,,,lips_nature2,lips_firm
+suit_Astringent,,,lips_nature5,lips_cracked
+suit_Bitter,,,lips_nature6,lips_wrinkled
+suit_Cold,,,nails_nature2,nails_firm
+suit_Sweet,,,nails_nature5,nails_brittle
+suit_Warm,,,palms_nature2,palms_firm
+,,,palms_nature5,palms_cracked
+,,,palms_nature6,palms_wrinkled
+,,,soles_nature2,soles_firm
+,,,soles_nature5,soles_cracked
+,,,soles_nature6,soles_wrinkled
+,,,teeth_appearance1,teeth_brittle
+,,,teeth_appearance2,teeth_loose
