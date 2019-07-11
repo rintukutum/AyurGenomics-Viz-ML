@@ -1,0 +1,310 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Attributes vs Prakritis</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+    }
+    svg {
+      border:0px solid #d0d0d0;
+      padding-left: 10px;
+      margin-left: 50px;
+    }
+    text {
+      font-size: 16px;
+      fill: #888;
+      margin-left: 50px;
+    }
+    path, line {
+      stroke: #888;
+    }
+    div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 300px;          
+    height: 100px;         
+    padding: 2px;       
+    font: 15px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+  </style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<div class='container-fluid'>
+    <center>
+    <div class="alert alert-primary" role="alert">
+        <h1>Prakritis vs Attributes</h1>
+        <hr>
+        <p style="font-family: monospace; font-size: 18px;"><ol>
+    <li> V
+    <li>P
+    <li>K
+    <li>VP
+    <li>KP
+    <li>KV
+  </ol></p>
+    </div>
+    </center>
+
+    <a href='/home'> < Home </a>
+
+</div>
+<script>
+
+  // register events to emit & listen for via d3 dispatch
+  var dispatch = d3.dispatch("load", "statechange");
+
+  // the first gen type of our dataset we want the chart to load with
+  var firstSiteName = "Anatomical";
+  
+  // unique years of our dataset to be used by our xScale domain
+  // computed after data loads
+  var years = [1,2,3,4,5,6];
+
+  // load our data! When done call our dispatch events with corresponding data
+  d3.csv('https://gist.githubusercontent.com/ishitamed19/e2ccdb926a6fe344ad2b035d9e446852/raw/7a72dca67b6db4c19ce368d89c6f7a19a657b4d6/entropy_labels_plot.csv', function(err, data) {
+    if (err) { throw(error) }
+
+    data.forEach(function(d) {
+      d.Entropy = +d.Entropy;
+      d.ID = +d.ID;
+    });
+    
+    // unique years in the data set, note data is already sorted chronologically
+    // years = data.reduce(function(acc, cur) {
+    //   if (acc.indexOf(cur.year) === -1) {
+    //     acc.push(cur.year);
+    //   }
+    //   return acc;
+    // }, []);
+
+    // max yield for the entire dataset, 75.5
+    // console.log(d3.max(data, function(d) { return d.yield; }));
+
+    var nested = d3.nest()
+      .key(function(d) { return d.Type; })
+      .key(function(d) { return d.Attributes; })
+      .entries(data);
+
+      //console.log(nested);
+
+    // construct a new d3 map, not as in geographic map, but more like a "hash"
+    var map = d3.map(nested, function(d) { return d.key; });
+
+    // call our dispatch events with `this` context, and corresponding data
+    dispatch.call("load", this, map);
+    dispatch.call("statechange", this, map.get(firstSiteName));
+  });
+
+
+  // register a listener for "load" and create a dropdown / select elem
+  dispatch.on("load.menu", function(map) {
+    // create select dropdown with listener to call "statechange"
+    var select = d3.select("body")
+      .append("div")
+      .append("select")
+        .on("change", function() {
+          var site = this.value;
+          dispatch.call(
+            "statechange",
+            this,
+            map.get(site)
+          );
+        });
+
+    // append options to select dropdown
+    select.selectAll("option")
+        .data(map.keys().sort())
+      .enter().append("option")
+        .attr("value", function(d) { return d; })
+        .text(function(d) { return d; });
+
+    // set the current dropdown option to value of last statechange
+    dispatch.on("statechange.menu", function(site) {
+      select.property("value", site.key);
+    });
+  });
+
+
+  // set up our punchcard chart after our data loads
+  dispatch.on("load.chart", function(map) {
+    // layout properties
+    var margin = { top: 20, right: 30, bottom: 30, left: 120 };
+    var width = 2000 - margin.left - margin.right;
+    var height = 2000 - margin.top - margin.bottom;
+
+    // scales for axises & circles
+    var yScale = d3.scalePoint(); // ordinal scale for gen type / category
+    var xScale = d3.scaleLinear(); // ordinal scale for years
+    var radius = d3.scaleSqrt(); // circle size would be too large if we used raw values, so we compute their square root
+    var color = d3.scaleOrdinal(d3.schemeCategory10); // colors used for differentiating "gen" type
+
+    // set up yScale with domain of unique gen values
+    yScale
+      .range([0, height])
+      //.domain(this.value(function(d) { return d.key; }))
+      .round(true);
+
+    // domain for our x scale is min - 1 & max years of the data set
+    xScale
+      .range([0, 500])
+      .domain([0.5,6]);
+
+    // domain of circle radius is from 0 to max d.yield
+    radius
+      .range([0, 15])
+      //.domain([0, d3.max(data, function(d) { return d.Entropy; }) ]);
+
+    // d3.v4 method of setting up axises: axisLeft, axisBottom, etc.
+    var yAxis = d3.axisLeft()
+      .scale(yScale);
+
+    var xAxis = d3.axisBottom()
+      //.tickFormat(function(d) { return d; })
+      .scale(xScale);
+
+    // Define the div for the tooltip
+var div = d3.select("body").append("div") 
+    .attr("class", "tooltip")       
+    .style("opacity", 0);
+
+    // create an svg element to hold our chart parts
+    var svg = d3.select("body").append('svg')
+      .attr('width', width + margin.left + margin.right)
+      .attr('height', height + margin.top + margin.bottom)
+      .append('g')
+        .attr('transform', 'translate(' + [margin.left, margin.top] + ')')
+
+    // append svg groups for the axises, then call their corresponding axis function
+    svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
+
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+
+    // register a callback to be invoked which updates the chart when "statechange" occurs
+    dispatch.on("statechange.chart", function(site) {
+      // our transition, will occur over 750 milliseconds
+      var t = svg.transition().duration(750);
+
+      // update our yScale & transition the yAxis, note the xAxis doesn't change
+      yScale.domain(site.values.map(function(d) { return d.key; }).sort());
+      yAxis.scale(yScale);
+      t.select("g.y.axis").call(yAxis);
+
+      // bind our new piece of data to our svg element
+      // could also do `svg.data([site.values]);`
+      svg.datum(site.values); 
+
+      // tell d3 we want svg groups for each of our gen categories
+      // NOTE: the use of 2 accessor functions: the first binds the data, the second sets the data-join's key
+      var gens = svg.selectAll("g.site")
+        .data(
+          function(d) { return d; },
+          function(d) { return d.key; }
+        );
+
+      // get rid of the old ones we don't need when doing an update
+      gens.exit().remove();
+
+      // update existing ones left over
+      gens.attr("class", "site")
+        .transition(t)
+        .attr("transform", function(d) {
+          return "translate(0," + yScale(d.key) + ")"
+        });
+
+      // create new ones if our updated dataset has more then the previous
+      gens.enter().append("g")
+        .attr("class", "site")
+        .transition(t)
+        .attr("transform", function(d) {
+          return "translate(0," + yScale(d.key) + ")"
+        });
+
+      // reselect the gen groups, so that we get any new ones that were made
+      // our previous selection would not contain them
+      gens = svg.selectAll("g.site");
+
+      // tell d3 we want some circles!
+      // NOTE: the use of 2 accessor functions: the first binds the data, the second sets the data join's key
+      var circles = gens.selectAll("circle")
+        .data(
+          function(d) { return d.values; },
+          function(d) { return d.ID; }
+        );
+
+      // get rid of ones we don't need anymore, fade them out
+      circles.exit()
+        .transition(t)
+      	.attr('r', 0)
+        .style("fill", "rgba(255,255,255,0)")
+        .remove();
+
+      // update existing circles, transition size & fill
+      circles
+        .attr("cy", 0)
+        .attr("cx", function(d) { return xScale(d.ID); })
+        .on("mouseover", function(d) {    
+            div.transition()    
+                .duration(200)    
+                .style("opacity", .9);    
+            div .html("Prakriti = " + d.Prakriti + "<br/><br/>Attribute = "  + d.Attributes + "<br/><br/>Entropy = "  + d.Entropy)  
+                .style("left", (d3.event.pageX) + "px")   
+                .style("top", (d3.event.pageY - 28) + "px");  
+            })          
+        .on("mouseout", function(d) {   
+            div.transition()    
+                .duration(500)    
+                .style("opacity", 0); 
+        })
+        .transition(t)
+        .attr("r", function(d) { return radius(d.Entropy); })
+        .attr("fill", function(d) { return color(d.ID); })
+        .style("opacity", function(d) { return d.Entropy*1.5;});
+        //.on("mouseover", fucntion(d) {return })
+
+      // make new circles
+      circles.enter().append("circle")
+        .attr("cy", 0)
+        .attr("cx", function(d) { return xScale(d.ID); })
+        .on("mouseover", function(d) {    
+            div.transition()    
+                .duration(200)    
+                .style("opacity", .9);    
+            div .html("Prakriti = " + d.Prakriti + "<br/><br/>Attribute = "  + d.Attributes + "<br/><br/>Entropy = "  + d.Entropy)  
+                .style("left", (d3.event.pageX) + "px")   
+                .style("top", (d3.event.pageY - 28) + "px");  
+            })          
+        .on("mouseout", function(d) {   
+            div.transition()    
+                .duration(500)    
+                .style("opacity", 0); 
+        })
+        .transition(t)
+        .attr("r", function(d) { return radius(d.Entropy); })
+        .attr("fill", function(d) { return color(d.ID); })
+        .style("opacity", function(d) { return d.Entropy*1.5;});
+
+    }); // end dispatch statechange.chart
+
+  }); // end dispatch load.chart
+
+</script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>

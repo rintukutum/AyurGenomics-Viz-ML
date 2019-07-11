@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="name" content="Concept Map" />
+	<meta name="description" content="An abstract mapping for various Prakriti types to their most common and relevant phenotypes"/>
+	<meta name="mintags" content="2" />
+	<meta name="maxtags" content="2" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Concept Map - Prakriti</title>
+
+<style>
+
+svg {
+    font: 16px sans-serif;
+    margin-left: 12%;
+    padding: 10px;
+    width: 3600px;
+}
+
+text {
+    pointer-events: none;
+}
+
+.inner_node rect {
+    pointer-events: all;
+}
+
+.inner_node rect.highlight {
+    stroke: #315B7E;
+    stroke-width: 2px;
+}
+
+.outer_node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+    pointer-events: all;
+}
+
+.outer_node circle.highlight
+{
+    stroke: #315B7E;
+    stroke-width: 2px;
+}
+
+.link {
+    fill: none;
+}
+
+</style>	
+</head>
+<body>
+
+<div class='container-fluid'>
+    <center>
+    <div class="alert alert-primary" role="alert">
+        <h1>Visualising Prakriti Types with Phenotypes</h1>
+        <hr>
+        <p style="font-family: monospace; font-size: 18px;">Connected Map Graph which lets the user visualize various categories and their phenotypes based on modern medicine framework.
+            <br>
+        Clicking on the categories shows a heatmap that allows visualising associated entropies of those phenotypes w.r.t. the Tridoshas - Vata, Pita and Kapha</p>
+    </div>
+    </center>
+
+    <a href='/home'> < Home </a>
+     <a href="/punchcard" class="btn btn-outline-primary" role="button">Visualise Prakriti vs Attributes Entropies</a>
+
+</div>
+
+<!-- <div class='container' style="margin:5px">
+    <iframe src="https://cdn.datamatic.io/runtime/echarts/3.7.2_251/embedded/index.html#id=101277845892273082789/19b2QApvWgxNw8DGqxSKlLA34QUWAs6QY" frameborder="0" width="100%" height="546" allowtransparency="true"></iframe>
+</div> -->
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+<div class="container" style="margin-left: 20px;">
+<script>
+//
+// Modified from Dustin Spicuzza <dustin@virtualroadside.com>
+//
+// This work is licensed under the Creative Commons Attribution 4.0
+// International License. To view a copy of this license, visit
+// http://creativecommons.org/licenses/by/4.0/.
+//
+// Inspired by http://www.findtheconversation.com/concept-map/
+// Loosely based on http://bl.ocks.org/mbostock/4063550
+//
+
+
+var data = [["Anatomical", 
+            ["Body Build Size", "Body Frame Breadth", "Body Frame Length", "Forehead BL", "Face size", "Eyebrows size", "Eye size", "Eye shape", "Lips size", "Shoulder breadth", "Chest breadth", "Hands length", "Nails length", "Leg lenth", "Joints size", "Skin type", "Skin Nature", "Skin Texture","Skin colour", "Skin appearance", "Scalp Hair texture & colour", "Eye colour & appearnace", "Teeth - apperance, colour, shape, size"]],
+
+            ["Physical", 
+            ["Walking", "Working", "Body Parts Movement", "Voice quality", "Content of speech", "Speaking"]],
+
+            ["Physiological", 
+            ["Appetite", "Bladder", "Thirst", "Digestive amount", "Dreams amount", "Perspiration amount", "Body temperatur amount", "Sleep amount", "Bowel Habits", "Body odour", "Sleep quality", "Body weight changes"]],
+
+            ["Psychological", 
+            ["Memorizing speed", "Forgetfulness speed", "Recalling speed", "Initiation speed", "Making new friends", "Anger speed", "Irritability speed", "Retaining quality", "Planning quality", "Execution quality", "Acheiving ends quality", "Retaining friends quality", "Anger", "Forgiveness", "Generosity", "Faith and Beliefs", "Memory Type"]] 
+            ];
+
+// transform the data into a useful representation
+// 1 is inner, 2, is outer
+
+// need: inner, outer, links
+//
+// inner: 
+// links: { inner: outer: }
+
+
+var outer = d3.map();
+var inner = [];
+var links = [];
+
+var outerId = [0];
+
+data.forEach(function(d){
+	
+	if (d == null)
+		return;
+	
+	i = { id: 'i' + inner.length, name: d[0], related_links: [] };
+	i.related_nodes = [i.id];
+	inner.push(i);
+	
+	if (!Array.isArray(d[1]))
+		d[1] = [d[1]];
+	
+	d[1].forEach(function(d1){
+		
+		o = outer.get(d1);
+		
+		if (o == null)
+		{
+			o = { name: d1,	id: 'o' + outerId[0], related_links: [] };
+			o.related_nodes = [o.id];
+			outerId[0] = outerId[0] + 1;	
+			
+			outer.set(d1, o);
+		}
+		
+		// create the links
+		l = { id: 'l-' + i.id + '-' + o.id, inner: i, outer: o }
+		links.push(l);
+		
+		// and the relationships
+		i.related_nodes.push(o.id);
+		i.related_links.push(l.id);
+		o.related_nodes.push(i.id);
+		o.related_links.push(l.id);
+	});
+});
+
+data = {
+	inner: inner,
+	outer: outer.values(),
+	links: links
+}
+
+// sort the data -- TODO: have multiple sort options
+outer = data.outer;
+data.outer = Array(outer.length);
+
+
+var i1 = 0;
+var i2 = outer.length - 1;
+
+for (var i = 0; i < data.outer.length; ++i)
+{
+	if (i % 2 == 1)
+		data.outer[i2--] = outer[i];
+	else
+		data.outer[i1++] = outer[i];
+}
+
+console.log(data.outer.reduce(function(a,b) { return a + b.related_links.length; }, 0) / data.outer.length);
+
+
+// from d3 colorbrewer: 
+// This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
+var colors = ["#a50026","#d73027","#f46d43","#fdae61","#fee090","#ffffbf","#e0f3f8","#abd9e9","#74add1","#4575b4","#313695"]
+var color = d3.scale.linear()
+    .domain([60, 220])
+    .range([colors.length-1, 0])
+    .clamp(true);
+
+var diameter = 1000;
+var rect_width = 150;
+var rect_height = 54;
+
+var link_width = "1px"; 
+
+var il = data.inner.length;
+var ol = data.outer.length;
+
+var inner_y = d3.scale.linear()
+    .domain([0, il])
+    .range([-(il * rect_height)/2, (il * rect_height)/2]);
+
+mid = (data.outer.length/2.0)
+var outer_x = d3.scale.linear()
+    .domain([0, mid, mid, data.outer.length])
+    .range([15, 170, 190 ,355]);
+
+var outer_y = d3.scale.linear()
+    .domain([0, data.outer.length])
+    .range([0, diameter / 2 - 120]);
+
+
+// setup positioning
+data.outer = data.outer.map(function(d, i) { 
+    d.x = outer_x(i);
+    d.y = diameter/3;
+    return d;
+});
+
+data.inner = data.inner.map(function(d, i) { 
+    d.x = -(rect_width / 2);
+    d.y = inner_y(i);
+    return d;
+});
+
+
+function get_color(name)
+{
+    if (name=="Anatomical")
+        return "#f46d43";	// fallback color
+    else if (name=="Physiological")
+        return "#fdae61";
+    else if(name=="Psychological")
+        return "#4575b4";
+    else
+        return "#74add1";
+    return colors[c];
+}
+
+// Can't just use d3.svg.diagonal because one edge is in normal space, the
+// other edge is in radial space. Since we can't just ask d3 to do projection
+// of a single point, do it ourselves the same way d3 would do it.  
+
+
+function projectX(x)
+{
+    return ((x - 90) / 180 * Math.PI) - (Math.PI/2);
+}
+
+var diagonal = d3.svg.diagonal()
+    .source(function(d) { return {"x": d.outer.y * Math.cos(projectX(d.outer.x)), 
+                                  "y": -d.outer.y * Math.sin(projectX(d.outer.x))}; })            
+    .target(function(d) { return {"x": d.inner.y + rect_height/2,
+                                  "y": d.outer.x > 180 ? d.inner.x : d.inner.x + rect_width}; })
+    .projection(function(d) { return [d.y, d.x]; });
+
+
+var svg = d3.select("body").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+    
+
+// links
+var link = svg.append('g').attr('class', 'links').selectAll(".link")
+    .data(data.links)
+  .enter().append('path')
+    .attr('class', 'link')
+    .attr('id', function(d) { return d.id })
+    .attr("d", diagonal)
+    .attr('stroke', function(d) { return get_color(d.inner.name); })
+    .attr('stroke-width', link_width);
+
+// outer nodes
+
+var onode = svg.append('g').selectAll(".outer_node")
+    .data(data.outer)
+  .enter().append("g")
+    .attr("class", "outer_node")
+    .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout);
+  
+onode.append("circle")
+    .attr('id', function(d) { return d.id })
+    .attr("r", 4.5);
+  
+onode.append("circle")
+    .attr('r', 20)
+    .attr('visibility', 'hidden');
+  
+onode.append("text")
+	.attr('id', function(d) { return d.id + '-txt'; })
+    .attr("dy", ".31em")
+    .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+    .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+    .text(function(d) { return d.name; });
+  
+// inner nodes
+  
+var inode = svg.append('g').selectAll(".inner_node")
+    .data(data.inner)
+  .enter().append("g")
+    .attr("class", "inner_node")
+    .attr("transform", function(d, i) { return "translate(" + d.x + "," + d.y + ")"})
+    .on("mouseover", mouseover)
+    .on("click", mouseclick)
+    .on("mouseout", mouseout);
+  
+inode.append('rect')
+    .attr('width', rect_width)
+    .attr('height', rect_height)
+    .attr('id', function(d) { return d.id; })
+    .attr('fill', function(d) { return get_color(d.name); });
+  
+inode.append("text")
+	.attr('id', function(d) { return d.id + '-txt'; })
+    .attr('text-anchor', 'middle')
+    .attr("transform", "translate(" + rect_width/2 + ", " + rect_height * .75 + ")")
+    .text(function(d) { return d.name; });
+
+// need to specify x/y/etc
+
+d3.select(self.frameElement).style("height", diameter - 150 + "px");
+
+function mouseover(d)
+{
+	// bring to front
+	d3.selectAll('.links .link').sort(function(a, b){ return d.related_links.indexOf(a.id); });	
+	
+    for (var i = 0; i < d.related_nodes.length; i++)
+    {
+        d3.select('#' + d.related_nodes[i]).classed('highlight', true);
+        d3.select('#' + d.related_nodes[i] + '-txt').attr("font-weight", 'bold');
+    }
+    
+    for (var i = 0; i < d.related_links.length; i++)
+        d3.select('#' + d.related_links[i]).attr('stroke-width', '5px');
+}
+
+function mouseclick(d,i)
+{
+    if (d.name=="Anatomical")
+        return window.open("/heatmap_anatomical", "_self");
+}
+
+function mouseout(d)
+{   	
+    for (var i = 0; i < d.related_nodes.length; i++)
+    {
+        d3.select('#' + d.related_nodes[i]).classed('highlight', false);
+        d3.select('#' + d.related_nodes[i] + '-txt').attr("font-weight", 'normal');
+    }
+    
+    for (var i = 0; i < d.related_links.length; i++)
+        d3.select('#' + d.related_links[i]).attr('stroke-width', link_width);
+}
+
+</script>
+</div>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
